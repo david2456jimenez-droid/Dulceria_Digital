@@ -64,6 +64,36 @@ body {
         
     }
 }
-.Banner_preferenciales img{
+.Banner_preferenciales {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Banner_preferenciales img {
     width: 100%;
+}
+.Arrow_preferenciales{
+    position: relative;
+}
+.Arrow_preferenciales img{
+    padding: 4px;
+}
+.Boton_preferencial{
+    background-color: #F1D5B0;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px px;
+    margin: 200px 80px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 27px;
+    padding: 1px;
+    
 }
