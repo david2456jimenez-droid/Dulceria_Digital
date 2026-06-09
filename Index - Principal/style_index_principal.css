@@ -113,6 +113,8 @@ main{
     width: 300px;
     height: 320px;
     gap: 98px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    
     li{
         margin-bottom: 24px;
         margin-top: 45px;
@@ -177,6 +179,7 @@ main{
     margin-left: 37px;
     height: 140px;
     width: 1820px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     li{
         list-style: none;
         text-align: left;
@@ -201,8 +204,10 @@ main{
     height: 45px;
     text-align: center;
     align-items: center;
+    justify-content: center;
     margin-left: 1100px;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 
 }
 .camino1{
@@ -213,4 +218,69 @@ main{
 }
 .camino3{
         background-color: #A32D2D;
+}
+/*Filtros*/
+.filtrado{
+    margin-top: 50px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    .btn{
+        background-color:   #A32D2D;
+        color: #FFFFFF;
+        border: none;
+        width: 350px;
+        height: 47px;
+        border-radius: 8px;
+        font-size: 24px;
+    }
+}
+/*Targetas de productos*/
+.productos{ /*contenedor de los productos*/
+    margin-top: 7px;
+    background-color: #FFF8F2;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    .filas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+    }
+    li{
+        margin-top: 38px; /*Nombre y precio*/
+        margin-left: 20px;
+        text-align: left;
+    }
+    .ros{ /*Precio*/
+        color: #D4537E;
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+.dulces{ /*Targeta*/
+    margin-top: 85px;
+    list-style: none;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #F4C0D1;
+    width:  420px;
+    height: 472px;
+    border-radius: 10px;
+    
+    .boton_agr{ /*Botones de agregar al carrito*/
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;      
+        border: none;
+        background-color: #A32D2D;
+        color: white;
+        width: 420px;
+        height: 74px;
+        border-radius: 10px;
+        font-size: 24px;
+    }
 }
