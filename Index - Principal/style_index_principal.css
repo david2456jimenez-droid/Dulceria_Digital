@@ -79,13 +79,19 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 78px;
+    width: 350px;
+    height: 70px;
     border: none;
     border-radius: 20px;
     position: absolute;
     margin-top: -480px;
     margin-left: 180px;
+}
+.btn_prefer:hover{
+    width: 400px;
+    height: 78px;
+    gap: 25px;
+    font-size: 16px;
 }
 
 /*Rankin de productos*/
@@ -93,7 +99,7 @@ main{
 .Ranking_text{
     background-color: #FFEBD7;
     width: 100%;
-    height: 56px;
+    height: 66px;
     margin-top: 55px;
     align-items: center;
 }
@@ -111,10 +117,14 @@ main{
     border: solid #A32D2D 2px;
     border-radius: 20px;
     width: 300px;
-    height: 320px;
+    height: 340px;
     gap: 98px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-    
+    .rose{
+        color: #D4537E;
+        font-size: 32px;
+    }
+
     li{
         margin-bottom: 24px;
         margin-top: 45px;
@@ -223,7 +233,7 @@ main{
 .filtrado{
     margin-top: 50px;
     display: flex;
-    gap: 200px;
+    gap: 250px;
     justify-content: center;
     align-items: center;
     .btn{
@@ -234,6 +244,9 @@ main{
         height: 47px;
         border-radius: 8px;
         font-size: 24px;
+    }
+    .btn:hover{
+        background-color: #f8aaaa;
     }
 }
 /*Targetas de productos*/
@@ -270,6 +283,7 @@ main{
     width:  420px;
     height: 472px;
     border-radius: 10px;
+    font-weight: 500;
     
     .boton_agr{ /*Botones de agregar al carrito*/
         align-items: center;
@@ -280,7 +294,100 @@ main{
         color: white;
         width: 420px;
         height: 74px;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         font-size: 24px;
+        box-shadow: 0, 4px, 6px rgba(0, 0, 0, 0.50);
+    }
+    .boton_agr:hover{
+        background-color: #f39696;
+        color: black;
+        font-weight: 500;
     }
 }
+
+/*Videos Promocionales*/
+.videos_prom{
+    margin-top: 65px;
+    margin-left: 45px;
+    align-items: center;
+    justify-content: center;
+    .videos_text{
+        display: flex;
+        gap: 25px;
+        img{
+            margin-top: -14px;
+        }
+        .line{
+            margin-top: 15px;
+        }
+    }
+    img{
+        margin-top: 45px;
+    }
+}
+.video_prod{
+    display: flex;
+    justify-content: center;
+    gap: 78px;
+    .watch1{
+        filter: brightness(0.6);
+    }
+}
+
+/*Footer de la pagina*/
+footer{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: #A32D2D;
+    gap: 400px;
+    font-size: 24px;
+    width: 100%;
+    height: 220px;
+    img{
+        width: 230px;
+        display: flex;
+    }
+    p{
+        display: flex;
+        color: white;
+        font-weight: 600;
+        margin-top: -20px;
+    }
+    .foot{
+        margin-top: 50px;
+        
+    }
+}
+.canales img{
+    width: 50px;
+}
+.canales{
+    margin-top: 50px;
+    .ico{
+        display: flex;
+        margin-top: 20px;
+        gap: 25px;
+    }
+    .url_quien_som{
+        display: flex;
+        margin-left: auto;
+        margin-top: 40px;
+        gap: 12px;
+
+        img{
+            width: 30px;
+            margin-top: -20px;
+        }
+    }
+}
+.Tiendas{
+    justify-content: center;
+    margin-top: 45px;
+    img{
+        width: 75px;
+        margin-top: 25px;
+        margin-left: 145px;
+    }
+}
+
