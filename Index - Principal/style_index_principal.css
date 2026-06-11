@@ -1,44 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /*Este es el head o cabezera de la pagina*/
 header{
     background-color: #A32D2D;
     display: flex;
-    gap: 180px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    width: 100%px;
+    width: 100%;
     height: 145px;
 }
-.logo_oficial{
-    width: 17%;
+.logo_oficial img{
+    width: 250px;
 }
 /*Navegador de la pagina*/
 .naveg_page{
     display: flex;
-    gap: 170px;
+    gap: 100px;
     align-items: center;
     justify-content: center;
-    a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    
 }
-.naveg_page :hover{
-    
-    background-color: #FFE8E8;
-    color: #A32D2D;
+
+.naveg_page a{
+    color: #FFFFFF;
+    text-decoration: none;
     width: 220px;
     height: 50px;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    transition: background-color 0.2 ease, color 0.2 ease;
+}
+
+.naveg_page a:hover{
+    background-color: #FFE8E8;
+    color: #A32D2D;
 }
 /*Boton de login de la pagina*/
 .carrito_loggin{
@@ -97,11 +97,13 @@ main{
 /*Rankin de productos*/
 
 .Ranking_text{
+    display: flex;
     background-color: #FFEBD7;
     width: 100%;
     height: 66px;
     margin-top: 55px;
     align-items: center;
+    justify-content: center;
 }
 
 .ranking_mast{
@@ -208,6 +210,7 @@ main{
     gap: 45px;
 }
 .camino1, .camino2, .camino3{
+    display: flex;
     font-size: 24px;
     color: #FFFFFF;
     width: 190px;
@@ -337,57 +340,101 @@ main{
 /*Footer de la pagina*/
 footer{
     margin-top: 50px;
-    justify-content: center;
-    display: flex;
     background-color: #A32D2D;
-    gap: 400px;
-    font-size: 24px;
     width: 100%;
     height: 220px;
-    img{
-        width: 230px;
-        display: flex;
-    }
-    p{
-        display: flex;
-        color: white;
-        font-weight: 600;
-        margin-top: -20px;
-    }
-    .foot{
-        margin-top: 50px;
-        
-    }
+    color: white;
 }
-.canales img{
-    width: 50px;
+
+/* Parte principal del footer */
+.footer_contenido{
+    height: 185px;
+    display: grid;
+    grid-template-columns: 300px 430px 350px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 18px 60px 0 60px;
+    box-sizing: border-box;
 }
+
+footer p{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Columna izquierda */
+.foot img{
+    width: 230px;
+    margin-top: 6px;
+}
+
+/* Columna centro */
 .canales{
-    margin-top: 50px;
-    .ico{
-        display: flex;
-        margin-top: 20px;
-        gap: 25px;
-    }
-    .url_quien_som{
-        display: flex;
-        margin-left: auto;
-        margin-top: 40px;
-        gap: 12px;
-
-        img{
-            width: 30px;
-            margin-top: -20px;
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+.canales > p{
+    width: 430px;
+}
+
+.ico{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 14px;
+}
+
+.ico img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.url_quien_som{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.url_quien_som img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Columna derecha */
 .Tiendas{
-    justify-content: center;
-    margin-top: 45px;
-    img{
-        width: 75px;
-        margin-top: 25px;
-        margin-left: 145px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.Tiendas img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 25px;
+}
+
+/* Barra inferior */
+.footer_links{
+    height: 35px;
+    background-color: #8f2929;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.footer_links a{
+    color: #e8bcbc;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
