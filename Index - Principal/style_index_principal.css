@@ -1,33 +1,54 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 /*Este es el head o cabezera de la pagina*/
-header{
+.cabezera{
     background-color: #A32D2D;
     display: flex;
-    gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 22px;
+    padding: 0 5%;
     width: 100%;
-    height: 145px;
+    font-size: 24px;
+    gap: 25px;
+    box-sizing: border-box; 
+    
 }
 .logo_oficial img{
-    width: 250px;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer; /*le dara interaction con el cursor a los iconos de amburguesa y equis */
+    display: none; /*desaparecera y solo aparecera cuando se ajuste al tamaño*/
+    transition: 0.4s;/*Ayuda a tener una animacion mas suave y no tan tosca*/
+}
+
+.mostrar-menu{
+    order: 1;/*le da el orden para que aparesca detras de los demas elementos*/
+}
+#check{
+    display: none; /*Es para que la caja de opcion "check" no aparesca por ahora*/
 }
 /*Navegador de la pagina*/
 .naveg_page{
     display: flex;
-    gap: 100px;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .naveg_page a{
     color: #FFFFFF;
     text-decoration: none;
-    width: 220px;
+    width: 250px;
+    padding: 0 10px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -40,6 +61,12 @@ header{
     background-color: #FFE8E8;
     color: #A32D2D;
 }
+
+.carro img{
+    width: 52px;
+    max-width: 100%;
+}
+
 /*Boton de login de la pagina*/
 .carrito_loggin{
     background-color: #FFFFFF;
@@ -48,14 +75,20 @@ header{
     width: 210px;
     height: 46px;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
-    text-align: center;
     border-radius: 10px;
-    gap: 36px;
-    a{
-        color: #A32D2D;
-        text-decoration: none;
-    }
+}
+
+.carrito_loggin a{
+    color: #A32D2D;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.carro{
+    cursor: pointer;
 }
 
 /*banner de preferenciales*/
@@ -84,8 +117,8 @@ main{
     border: none;
     border-radius: 20px;
     position: absolute;
-    margin-top: -480px;
-    margin-left: 180px;
+    bottom: 42%;
+    left: 10%;
 }
 .btn_prefer:hover{
     width: 400px;
@@ -109,8 +142,8 @@ main{
 .ranking_mast{
     margin-top: 56px;
     display: flex;
-    gap: 156px;
-    justify-content: center;
+    padding: 0 15%;
+    justify-content: space-between;
     align-items: center;
 }
 .rankin_top{
@@ -148,10 +181,10 @@ main{
 /*pedidos recientes*/
 .pedidos{
     display: flex;
-    gap: 1295px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 56px;
+    padding: 0 2%;
     .pedi_te{
         display: flex;
         align-items: center;
@@ -164,8 +197,8 @@ main{
 .ver_todos{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 35px;
+    justify-content: center;    
+    gap: 15px;
     font-size: 24px;
     font-weight: bold;
     a {
@@ -174,23 +207,32 @@ main{
         margin-top: -20px;
     }
     img{
-        margin-top: -25px;
+        margin-top: -20px;
         width: 45px;
     }
 }
 .entr_prod{
     gap: 500px;
+    padding: 0 55px;
 }
+
+.contenedor_prod{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
 .entregas{
     background-color: #fdeaea;
     display: flex;
     border-radius: 25px;
     gap: 50px;
     align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
     margin-top: 45px;
-    margin-left: 37px;
     height: 140px;
-    width: 1820px;
+    width: 100%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     li{
         list-style: none;
@@ -213,12 +255,11 @@ main{
     display: flex;
     font-size: 24px;
     color: #FFFFFF;
-    width: 190px;
-    height: 45px;
+    width: 10%;
+    height: 35%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left: 1100px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 
@@ -236,10 +277,13 @@ main{
 .filtrado{
     margin-top: 50px;
     display: flex;
-    gap: 250px;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 10%;
     align-items: center;
-    .btn{
+    
+}
+
+.btn{
         background-color:   #A32D2D;
         color: #FFFFFF;
         border: none;
@@ -248,21 +292,17 @@ main{
         border-radius: 8px;
         font-size: 24px;
     }
-    .btn:hover{
-        background-color: #f8aaaa;
-    }
+.btn:hover{
+    background-color: #f8aaaa;
 }
 /*Targetas de productos*/
 .productos{ /*contenedor de los productos*/
-    margin-top: 7px;
+    margin-top: 2%;
     background-color: #FFF8F2;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    
     .filas{
         display: flex;
         justify-content: center;
+        padding: 0 80px;
         align-items: center;
         gap: 150px;
     }
@@ -282,59 +322,88 @@ main{
     list-style: none;
     font-size: 24px;
     background-color: #FFFFFF;
-    border: 1px solid #F4C0D1;
-    width:  420px;
+    border: 2px solid #F4C0D1;
+    width:  400px;
+    max-width: 400px;
+    min-width: 0;
     height: 472px;
     border-radius: 10px;
     font-weight: 500;
+    box-sizing: border-box;
     
-    .boton_agr{ /*Botones de agregar al carrito*/
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;      
-        border: none;
-        background-color: #A32D2D;
-        color: white;
-        width: 420px;
-        height: 74px;
-        border-radius: 0 0 10px 10px;
-        font-size: 24px;
-        box-shadow: 0, 4px, 6px rgba(0, 0, 0, 0.50);
-    }
-    .boton_agr:hover{
-        background-color: #f39696;
-        color: black;
-        font-weight: 500;
-    }
+}
+
+.boton_agr{ /*Botones de agregar al carrito*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;      
+    border: none;
+    background-color: #A32D2D;
+    color: white;
+    width: 100%;
+    height: 74px;
+    border-radius: 0 0 10px 10px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.50);
+}
+
+.boton_agr:hover{
+    background-color: #f39696;
+    color: black;
+    font-weight: 500;
+}
+
+.dulces img {
+    max-width: 100%; /*La imagen nunca podra ser mas acha que su targeta*/
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    object-fit: contain;
 }
 
 /*Videos Promocionales*/
 .videos_prom{
     margin-top: 65px;
-    margin-left: 45px;
-    align-items: center;
-    justify-content: center;
-    .videos_text{
-        display: flex;
-        gap: 25px;
-        img{
-            margin-top: -14px;
-        }
-        .line{
-            margin-top: 15px;
-        }
-    }
-    img{
-        margin-top: 45px;
-    }
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+
+.videos_text{
+    display: flex;
+    gap: 25px;
+}
+
+.line{
+    margin-top: 15px;
+    width: 1425px;
+    max-width: 100%;
+    height: 1px;
+    padding: 0 2%;
+}
+
+.videos_text img{
+    margin-top: -14px;
+}
+
+.fond{
+    margin-top: 55px;
+    width: 100%;
 }
 .video_prod{
     display: flex;
     justify-content: center;
-    gap: 78px;
-    .watch1{
-        filter: brightness(0.6);
-    }
+    gap: 38px;
+    margin-top: 40px;
+}
+
+.watch1{
+    filter: brightness(0.6);
+}
+
+.watch1 img {
+    margin-top: 50px;
+    justify-content: center;
 }
 
 /*Footer de la pagina*/
@@ -344,13 +413,14 @@ footer{
     width: 100%;
     height: 220px;
     color: white;
+    box-sizing: border-box;
 }
 
 /* Parte principal del footer */
 .footer_contenido{
-    height: 185px;
+    height: 225px;
     display: grid;
-    grid-template-columns: 300px 430px 350px;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: start;
     padding: 18px 60px 0 60px;
@@ -374,16 +444,17 @@ footer p{
 .canales{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .canales > p{
-    width: 430px;
+    width: 100%;
+    margin-left: -10px; 
 }
 
 .ico{
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /*iconos bajan si no caben*/
     gap: 28px;
     margin-top: 14px;
 }
@@ -391,7 +462,6 @@ footer p{
 .ico img{
     width: 50px;
     height: 50px;
-    object-fit: contain;
 }
 
 .url_quien_som{
@@ -404,7 +474,6 @@ footer p{
 .url_quien_som img{
     width: 28px;
     height: 28px;
-    object-fit: contain;
 }
 
 /* Columna derecha */
@@ -417,24 +486,430 @@ footer p{
 .Tiendas img{
     width: 75px;
     height: 75px;
-    object-fit: contain;
+    object-fit: contain; /*mantiene la imagen original si salirse de caja*/
     margin-top: 25px;
 }
 
 /* Barra inferior */
 .footer_links{
-    height: 35px;
-    background-color: #8f2929;
+    height: auto; /*Calcula la altura automaticamente*/
+    margin-top: -30px;
+    height: 35px; 
+    background-color: #e8bcbc;
     display: flex;
     align-items: center;
-    gap: 45px;
-    padding-left: 8px;
+    gap: 20px;
+    padding-left: 8px 8px;
     box-sizing: border-box;
 }
 
-.footer_links a{
-    color: #e8bcbc;
+.footer_links a {
+    color: #A32D2D;
     text-decoration: none;
+    margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+
+
+
+/*-------- RESPOSIVE Tabletas 768px -----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .mostrar-menu {
+        display: block;
+        color: white;
+        order: 3;
+    }
+
+    /*ocultar nav por defecto */
+    .naveg_page {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #812020;
+        padding: 20px 0;
+        z-index: 999; /*para dejar el elemento por encima*/
+        gap: 5px;
+    }
+    
+    #check:checked ~ .naveg_page {
+        display: flex;
+    }
+
+    /*Mostar la X para cerrar*/
+    .esconder-menu {
+        display: block;
+        color: white;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /*Ajustar links dentro del menu*/
+    .naveg_page a {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    /*Cabezera*/
+    .cabezera{
+        height: 120px;
+        .carrito_loggin {
+            width: 150px;
+        }
+        .carro img{
+            width: 78%;
+            top: 50px;
+        }
+    }
+    /*Banner preferenciales*/
+    .btn_prefer img{
+        width: 30px;
+        height: 25px; 
+    }
+    .btn_prefer{
+        bottom: 33%;
+        left: 9%;
+        width: 250px;
+        font-size: 10px;
+        gap: 15px;        
+    }
+    .btn_prefer:hover{
+        width: 300px;
+        height: 70px;
+        gap: 30px;
+        font-size: 12px;
+    }
+    /* Ranking de productos*/
+    .Ranking_text{
+        font-size: 15px;
+    }
+    /*Productos estrellas*/
+
+    .ranking_mast{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .rankin_top{
+        width: 200px;
+        height: 230px;
+        li{
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .rose{
+            font-size: 25px;
+        }
+    }
+    .prod_t img{
+        width: 9%;
+        margin-left: -32px;
+        margin-top: 9px;
+        position: absolute;
+    }
+    .prod_t{
+        margin-left: 50px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .ver_todos{
+        margin-top: 20px;
+    }
+
+    .entr_prod{
+        padding: 0 2px;
+    }
+    .entregas{
+        li{
+            font-size: 20px;
+        }
+        .precio_ped{
+            font-size: 22px;
+        }
+    }
+    .entregas img{
+        width: 15%;
+        margin-left: -5px;
+    }
+    .camino1, .camino2, .camino3{
+        width: 20%;
+    }
+
+    .filtrado{
+        justify-content: center;
+        padding: 0 2%;
+        width: 100%;    
+        gap: 150px;
+    }
+    .productos{
+        .filas{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    .videos_text{
+        font-size: 10px;
+        text-align: left;
+        .line {
+            position: fixed;
+        }
+    }
+    .fond{
+        width: 95%;
+    }   
+    .watch1{
+        margin-top: -45px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 140%;
+        }
+    }
+    footer p{
+        font-size: 15px;
+    }
+    .foot img{
+        width: 150px;
+    }
+
+    .ico{
+        gap: 10px;
+        margin-left: 15px;
+    }
+    .ico img{
+        width: 15%;
+        height: 15%;
+    }
+    .url_quien_som{
+        text-align: left;
+        gap: 3px;
+        margin-left: 5px;
+    }
+    .url_quien_som img{
+        width: 15%;
+        height: 15%;
+    }
+    .Tiendas img{
+        width: 50px;
+        height: 50px;
+    }
+    .footer_links a {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+/*------------- RESPONSIVE Android 425px ------------------------------------------------------------------------------------------------*/
+@media (max-width: 425px)
+{
+    .cabezera{
+        width: 100%;
+        height: 90px;
+    }
+    .logo_oficial{
+        width: 115px;
+    }
+    .carro{
+        margin-top: 15px;
+        width: 40px;
+    }
+    .carrito_loggin{
+        display: flex;
+        font-size: 15px;
+        gap: 5px;
+        width: 15px;
+        height: 35px;
+        img{
+            width: 25px;
+        }
+    }
+    .naveg_page a{
+        font-size: 15px;
+    }
+    .naveg_page{
+        height: 200px;
+    }
+    .btn_prefer img{
+        width: 23px;
+        height: 18px;
+    }
+    .btn_prefer{
+        bottom: 29%;
+        left: 9%;
+        width: 150px;
+        height: 50px;
+        font-size: 6px;
+        border-radius: 10px;
+    }
+    .btn_prefer:hover{
+        width: 160px;
+        height: 50px;
+        font-size: 6px;
+        gap: 20px;
+    }
+    .Ranking_text{
+        font-size: 10px;
+        margin-top: 25px;
+        height: 45px;
+    }
+
+    .ranking_mast{
+        justify-content: space-between;
+        padding: 0 5px;
+        margin-top: 25px;
+    }
+    .rankin_top{
+        width: 120px;
+        height: 180px;
+        gap: 25px;
+        li{
+            font-size: 10px;
+            margin-top: 30px;
+        }
+        .rose{
+            font-size: 15px;
+            font-weight: 540;
+        }
+    }
+    .prod_t img{
+        margin-left: -21px;
+        position: absolute;
+    }
+    .prod_t{
+        margin-top: -35px;
+        margin-left: 27px;
+        width: 60px;
+        height: 60px;
+    }
+    .ver_todos{
+        font-size: 15px;
+        img{
+            width: 35px;
+        }
+    }
+    .pedi_te{
+        font-size: 9px;
+        img{
+            margin-top: -2px;
+            width: 35px;
+        }
+    }
+    .entregas{
+        height: 100px;
+        width: 418px;
+        justify-content: space-between;
+        padding: 0 18px;
+        border-radius: 10px;
+        li{
+            font-size: 10px;
+        }
+        .precio_ped{
+            font-size: 12px;
+        }
+    }
+    .entregas img{
+        height: 25px;
+        width: 25px;
+    }
+    .camino1, .camino2, .camino3{
+        width: 25%;
+        font-size: 10px;
+    }
+    .filtrado{
+        padding: 0 10px;
+        gap: 10px;
+    }
+    .btn{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .dulces{
+        flex-wrap: wrap;
+        width: 260px;
+        height: 310px;
+        font-size: 18px;
+        li{
+            margin-top: 15px;
+        }
+        .ros{
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .boton_agr{
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    .dulces img{
+         height: 150px;
+         width: 100%;
+         margin-top: 5px;
+         object-fit: contain; /*para que la imagen completa se vea sin recortarse*/
+    }
+    .videos_text{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        img{
+            width: 10%;
+            height: 10%;
+        }
+    }
+    .fond{
+        width: 350px;
+    }
+    .watch1{
+        display: flex;
+        justify-content: space-between;
+        gap: 55px;
+    }
+    .watch1 img{
+        width: 90%; 
+    }
+
+    .footer_contenido{
+    gap: 20px;
+    height: auto;       /* deja que se ajuste al contenido, en vez de forzar 195px */
+    padding: 15px 20px;
+    }
+    footer{
+        height: auto;       /* el footer también se ajusta, no fuerces 220px */
+        padding-bottom: 10px;
+    }
+    footer p{
+        margin-top: 5px;    /* menos espacio arriba de cada título */
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .foot img{
+        width: 80px;        /* logo más chico (antes 120px) */
+    }
+    .ico{
+        margin-left: 2px;
+        gap: 8px;           /* un poco más de aire entre iconos, pero no mucho */
+    }
+    .ico img{
+        width: 28px;        /* tamaño fijo más controlable que % */
+        height: 28px;
+    }
+    .url_quien_som{
+        margin-top: 4px;    /* menos espacio antes de "¿Quiénes Somos?" */
+    }
+    .Tiendas img{
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_links{
+        margin-top: 2px;
+    }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dulceria Digital Adso</title>
         <link rel="stylesheet" href="style_index_principal.css">
         <style>
@@ -14,18 +15,27 @@
     <body>
         <!--Navegador o cabezara de la pagina-->
         <header>
-            <div class="logo_oficial">
-                <img src="img/logo_oficial.png" alt="Logo.png" width="76%">
+            <div class="cabezera">
+                <div class="logo_oficial">
+                <img src="img/logo_oficial.png" alt="Logo.png">
             </div>
+            <input type="checkbox" id="check"> <!-- caja de opciones -->
+            <label for="check" class="mostrar-menu">
+                &#8801;
+            </label>
             <nav class="naveg_page">
-                <a href=""> Dulceria</a>
-                <a href="">Regalos</a>
-                <a href="">¿Quienes Somos?</a>
+                <a href="#"> Dulceria</a>
+                <a href="#">Regalos</a>
+                <a href="#">¿Quienes Somos?</a>
+                <label for="check" class="esconder-menu">
+                    &#215;
+                </label>
             </nav>
-            <img src="img/Shopping Cart.png" alt="Shopping.png" width="52px">
+            <div class="carro"><img src="img/Shopping Cart.png" alt="Shopping.png" width="52px"></div>
             <div class="carrito_loggin">
                 <a href=""><img src="img/Test Account.png" alt="loggin.png" width="35px"></a>
                 <a href="#ingresar">Ingresar</a>
+            </div>
             </div>
         </header>
         <!--Cuerpo de la pagina-->
@@ -80,37 +90,43 @@
                     <h2>Tus pedidos recientes</h2>
                 </div>
                 
-                <nav class="ver_todos">
+                <div class="ver_todos">
                     <a href="#pedidos_recientes">Ver todos</a>
                     <img src="img/right-arrow line right.png" alt="arrow_vertodos.png">
-                </nav>
+                </div>
             </section>
             <section class="entr_prod">
                 <div class="entregas">
-                    <img src="img/Check.png" alt="Check.png">
-                    <ul class="entregado">
-                        <li>Gomas Grissly Acidas</li>
-                        <li>12 marzo 2025 . 3 productos</li>
-                        <li class="precio_ped">$10.800</li>
-                    </ul>
+                    <div class="contenedor_prod">
+                            <img src="img/Check.png" alt="Check.png">
+                        <ul class="entregado">
+                            <li>Gomas Grissly Acidas</li>
+                            <li>12 marzo 2025 . 3 productos</li>
+                            <li class="precio_ped">$10.800</li>
+                        </ul>
+                    </div>
                     <p class="camino1">entregado</p>
                 </div>
                 <div class="entregas">
-                    <img src="img/truck repart.png" alt="Check.png">
-                    <ul class="entregado">
-                        <li>Regalo Personalizado</li>
-                        <li>12 marzo 2025 . 3 productos</li>
-                        <li class="precio_ped">$21.800</li>
-                    </ul>
+                    <div class="contenedor_prod">
+                            <img src="img/truck repart.png" alt="Check.png">
+                        <ul class="entregado">
+                            <li>Regalo Personalizado</li>
+                            <li>12 marzo 2025 . 3 productos</li>
+                            <li class="precio_ped">$21.800</li>
+                        </ul>
+                    </div>
                     <p class="camino2">En camino</p>
                 </div>
                 <div class="entregas">
-                    <img src="img/Check.png" alt="Check.png">
-                    <ul class="entregado">
-                        <li>Gomas Grissly Acidas</li>
-                        <li>12 marzo 2025 . 3 productos</li>
-                        <li class="precio_ped">$10.800</li>
-                    </ul>
+                    <div class="contenedor_prod">
+                            <img src="img/Check.png" alt="Check.png">
+                        <ul class="entregado">
+                            <li>Gomas Grissly Acidas</li>
+                            <li>12 marzo 2025 . 3 productos</li>
+                            <li class="precio_ped">$10.800</li>
+                        </ul>
+                    </div>
                     <p class="camino3">entregado</p>
                 </div>
             </section>
@@ -239,10 +255,10 @@
                 <div class="videos_text">
                     <img src="img/Video Call.png" alt="video.ico" width="45px">
                     <h2>Videos Promocioneales</h2>
-                    <img class="line" src="img/Line 5.png" alt="line.img" width="70%" height="1px">
+                    <img class="line" src="img/Line 5.png" alt="line.img">
                 </div>
                 
-                <img src="img/Gomitas azucaradas 1 (1).png" alt="video_promocional.png" width="90%">
+                <img class="fond" src="img/Gomitas azucaradas 1 (1).png" alt="video_promocional.png">
                 <div class="video_prod">
                     <div class="watch1">
                         <img src="img/frascon de Gomitas 1.png" alt="select_gomit.png">
@@ -284,7 +300,7 @@
                         <img src="img/Shop Location.png" alt="tienda_icono">
                     </div>
                 </div>
-
+                <!-- Terminos y condiciones de la pagina -->
                 <div class="footer_links">
                     <a href="">Términos y condiciones</a>
                     <a href="">Políticas de privacidad</a>
