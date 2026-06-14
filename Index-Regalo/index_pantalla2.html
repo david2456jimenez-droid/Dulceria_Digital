@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalos</title>
+    <link rel="stylesheet" href="style_Regalo.css">
+</head>
+<body>
+    <!--Navegador o cabezara de la pagina-->
+        <header>
+            <div class="cabezera">
+                <div class="logo_oficial">
+                <img src="img/Cabezera/logo_oficial.png" alt="Logo.png">
+            </div>
+            <input type="checkbox" id="check"> <!-- caja de opciones -->
+            <label for="check" class="mostrar-menu">
+                &#8801;
+            </label>
+            <nav class="naveg_page">
+                <a href="#"> Dulceria</a>
+                <a href="#">Regalos</a>
+                <a href="#">¿Quienes Somos?</a>
+                <label for="check" class="esconder-menu">
+                    &#215;
+                </label>
+            </nav>
+            <div class="carro"><img src="img/Cabezera/Shopping Cart.png" alt="Shopping.png" width="52px"></div>
+            <div class="carrito_loggin">
+                <a href=""><img src="img/Cabezera/Test Account.png" alt="loggin.png" width="35px"></a>
+                <a href="#ingresar">Ingresar</a>
+            </div>
+            </div>
+        </header>
+        <!--Cuerpo de la pagina-->
+        <main>
+            <!--Banner de la pagina regalos-->
+            <section class="banner_regalos">
+                <div class="Animacion_banner">
+                    <div class="letras_ban">
+                        <h2>Cada momento merece el regalo perfecto</h2>
+                        <div class="boton_banner">
+                            <img src="img/Shopaholic.png" alt="Shopaholic.img">
+                            <a href="#personalizar">Personaliza tu regalo</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="banner" src="img/banner_regalos.png" alt="Banner_regalos.png">
+            </section>
+            
+            <!-- Rankin de productos -->
+             <section class="ranking_prod">
+                <h1 class="text_rank">Ranking de los productos mas vendidos</h1>
+                <div class="ver_todos">
+                    <a href="#Regalos/ver_todos">Ver Todos</a>
+                    <img src="img/Right ArrowMorado-osc.png" alt="Arrow_.png">
+                </div>
+
+                <!-- Targeta ranking 1 -->
+                <div class="prod_rank">
+                    <div class="targeta_prod">
+                        <img class="top" src="img/top_1.png" alt="top_1.png">
+                        <img src="img/chimuelo.png" alt="chimuelo.png">
+                        <div class="barra_rank">
+                            <p>chimuelo</p>
+                            <div class="barra1"></div>
+                            <div class="carrito">
+                                <a href="#">Agregar al carrito</a>
+                                <img src="img/Fast Cart.png" alt="">
+                            </div>
+                        </div>
+                        <p class="cantidad">14.5k</p>
+                    </div>
+
+                    <!-- Targeta ranking 2 -->
+                    <div class="targeta_prod">
+                        <img class="top" src="img/top_2.png" alt="top_2.png">
+                        <img class="prod_img" src="img/Perfumen_Valentino.png" alt="Perfumen_Valentino.png">
+                        <div class="barra_rank">
+                            <p>chimuelo</p>
+                            <div class="barra2">
+                                <div class="barra2_0"></div>
+                                <div class="barra2_1"></div>
+                            </div>
+                            <div class="carrito">
+                                <a href="#">Agregar al carrito</a>
+                                <img src="img/Fast Cart.png" alt="">
+                            </div>
+                        </div>
+                        <p class="cantidad">8.2k</p>
+                    </div>
+
+                    <!-- Targeta ranking 3 -->
+                     <div class="targeta_prod">
+                        <img class="top" src="img/top_3.png" alt="top_1.png">
+                        <img src="img/Reloj para caballeros.png" alt="Reloj para caballeros.png">
+                        <div class="barra_rank">
+                            <p>chimuelo</p>
+                            <div class="barra3">
+                                <div class="barra3_0"></div>
+                                <div class="barra3_1"></div>
+                            </div>
+                            <div class="carrito">
+                                <a href="#">Agregar al carrito</a>
+                                <img src="img/Fast Cart.png" alt="">
+                            </div>
+                        </div>
+                        <p class="cantidad">5.1k</p>
+                    </div>
+                </div>
+             </section>
+
+             <!-- seccion de filtros -->
+              <section class="filtros_DiaEspecial">
+                <!-- Filtro del Dia de las Madres-->
+                <div class="filtro">
+                    <img src="img/Filtro_Diamadre.png" alt="Dia_D-Madres.png">
+                    <a href="#Dia de las madres">Dia de las Madres</a>
+                </div>
+                <!-- Filtro del Dia del Padre -->
+                <div class="filtro">
+                    <img src="img/Dia_padre.png" alt="Dia_padre.png">
+                    <a href="#Dia del Padre">Dia del Padre</a>
+                </div>
+                <!-- Fiiltro Cumpleños -->
+                <div class="filtro">
+                    <img src="img/Cumpleaños.png" alt="Cumpleaños.png">
+                    <a href="#Feliz Cumpleaños">Feliz Cumpleaños</a>
+                </div>
+                <!-- Filtro Dia de Amor y Amistad -->
+                <div class="filtro">
+                    <img src="img/Dia_AmorAmistad.png" alt="Cumpleaños.png">
+                    <a href="#Amor y Amistad">Amor y Amistad</a>
+                </div>
+                <!-- Filtro Dia de Aniversario -->
+                <div class="filtro">
+                    <img src="img/Dia_aniversario.png" alt="Cumpleaños.png">
+                    <a href="#Aniversario">Aniversario</a>
+                </div>
+              </section>
+
+              <!-- Seccion de productos -->
+               <section class="targeta_productos">
+                <div class="regalos-prod">
+                    <img src="img/prod chimuelo.png" alt="chimuelo.png">
+                    <p>Chimuelo</p>
+                    <p class="precio">$ 44.988</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Gafas de sol.png" alt="Gafas-de-sol.png">
+                    <p>Gafas de sol</p>
+                    <p class="precio">$ 18.460</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Capibara.png" alt="Capibaraaaa.png">
+                    <p>Capibara</p>
+                    <p class="precio">$ 35.600</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod gorro negro.png" alt="Gorro negro.png">
+                    <p>Gorro negro</p>
+                    <p class="precio">$ 11.988</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod termo batman.png" alt="Batman-termo.png">
+                    <p>Termo de batman</p>
+                    <p class="precio">$ 35.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod panda rojo.png" alt="panda-rojo.png">
+                    <p>Panda Rojo</p>
+                    <p class="precio">$ 40.00</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Gorra unisex.png" alt="Gorra-U.png">
+                    <p>Gorra Unisex</p>
+                    <p class="precio">$ 22.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Gorra negra.png" alt="Gorra-Black.png">
+                    <p>Gorra Negra</p>
+                    <p class="precio">$ 10.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Gafas Oscuras.png" alt="Gafas.png">
+                    <p>Gafas de sol</p>
+                    <p class="precio">$ 15.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Taza de Cafe roja.png" alt="taza-roja.png">
+                    <p>Taza de Cafe Roja</p>
+                    <p class="precio">$ 30.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Gafas polarizada azul.png" alt="Gafas polarizadas.png">
+                    <p>Gafas polarizadas azules</p>
+                    <p class="precio">$ 20.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod oso de peluche.png" alt="Oso-peluche.png">
+                    <p>Oso de peluche</p>
+                    <p class="precio">$ 30.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod reloj hombre.png" alt="Reloj-Men.png">
+                    <p>Reloj para Caballeros</p>
+                    <p class="precio">$ 30.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod taza cafe cat.png" alt="taza-Cat.png">
+                    <p>Taza de cafe Cat</p>
+                    <p class="precio">$ 30.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod Perfumen_Valentino.png" alt="Valentino.png">
+                    <p>Perfumen valentinos - Caballeros</p>
+                    <p class="precio">$ 80.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="regalos-prod">
+                    <img src="img/prod perfumen moshino.png" alt="Moshino-Mujer.png">
+                    <p>Perfumen Moshino - Damas</p>
+                    <p class="precio">$ 90.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod reloj mujer.png" alt="reloj-mujer.png">
+                    <p>Reloj para Damas</p>
+                    <p class="precio">$ 130.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod taza aguacate.png" alt="taza.png">
+                    <p>Taza</p>
+                    <p class="precio">$ 10.300</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod termo aguacate.png" alt="chimuelo.png">
+                    <p>Termo</p>
+                    <p class="precio">$ 15.000</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <img src="img/prod termo personalizado.png" alt="Personalizacion.png">
+                    <p>Termo personalizable</p>
+                    <p class="precio">$ 32.100</p>
+                    <div class="botones">
+                        <button class="agr_canasta">+ Canasta</button>
+                        <button class="añad_carrito">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="regalos-prod">
+                    <div class="continuara_">
+                        <img src="img/prod mas producto.png" alt="continuara....">
+                        <h4>Mas articulos disponibles Proximamente</h4>
+                    </div>
+                </div>
+               </section>
+
+               <section class="visuali_canasta">
+                <div class="canasta_text">
+                    <h2>Visualización de canastas</h2>
+                    <div class="linea-canat"></div>
+                    
+                    <div class="ver_canast">
+                        <img class="img_canast" src="img/Shopping Basket.png" alt="canasta.png">
+                        <a href="#ver">Ver todos</a>
+                        <img src="img/Right ArrowMorado-osc.png" alt="">
+                    </div>
+                </div>
+
+                <div class="videos_canast">
+                    <img class="flecha_cans" src="img/left-canast.png" alt="">
+                    <video class="video-cans" autoplay muted loop playsinline>
+                        <source src="img/grok-video-a2c479a8-333c-4243-a97a-7a6b3c67be9f.mp4" type="video/mp4">
+                    </video>
+                    <!--"video-cans"-->
+                    <img class="flecha_cans" src="img/rigth-canast.png" alt="">
+                </div>
+               </section>
+        </main>
+        <!--Footer de la pagina-->
+        <footer>
+                <div class="footer_contenido">
+                    <div class="foot">
+                        <p>Tu Dulceria Favorita</p>
+                        <img src="img/footer/logo_oficial.png" alt="logo.png">
+                    </div>
+
+                    <div class="canales">
+                        <p>Visita Nuestros canales digitales</p>
+                        <div class="ico">
+                            <img src="img/footer/youtube blanco 1.png" alt="youtube">
+                            <img src="img/footer/Twitter Circled.png" alt="twitter">
+                            <img src="img/footer/Facebook.png" alt="Facebook">
+                            <img src="img/footer/Instagram Circle.png" alt="Instagram">
+                            <img src="img/footer/WhatsApp.png" alt="Whatsapp">
+                        </div>
+                        <div class="url_quien_som">
+                            <p>¿Quienes Somos?</p>
+                            <img src="img/footer/icon-park_share.png" alt="visited">
+                        </div>
+                    </div>
+
+                    <div class="Tiendas">
+                        <p>Visita Nuestras Tiendas</p>
+                        <img src="img/footer/Shop Location.png" alt="tienda_icono">
+                    </div>
+                </div>
+                <!-- Terminos y condiciones de la pagina -->
+                <div class="footer_links">
+                    <a href="">Términos y condiciones</a>
+                    <a href="">Políticas de privacidad</a>
+                    <a href="">Contactos</a>
+                </div>
+            </footer>
+</body>
+</html>

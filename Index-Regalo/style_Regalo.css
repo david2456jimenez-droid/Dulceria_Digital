@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Este es el head o cabezera de la pagina*/
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+body{
+    background-color: #FFF8F2;      
+}
+
+.cabezera{
+    background-color: #A32D2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+    font-size: 24px;
+    gap: 25px;
+    box-sizing: border-box; 
+    
+}
+.logo_oficial img{
+    width: 200px;
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer; /*le dara interaction con el cursor a los iconos de amburguesa y equis */
+    display: none; /*desaparecera y solo aparecera cuando se ajuste al tamaño*/
+    transition: 0.4s;/*Ayuda a tener una animacion mas suave y no tan tosca*/
+}
+
+.mostrar-menu{
+    order: 1;/*le da el orden para que aparesca detras de los demas elementos*/
+}
+#check{
+    display: none; /*Es para que la caja de opcion "check" no aparesca por ahora*/
+}
+
+/*Navegador de la pagina*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.naveg_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.naveg_page a{
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 250px;
+    padding: 0 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.2 ease, color 0.2 ease;
+}
+
+.naveg_page a:hover{
+    background-color: #FFE8E8;
+    color: #A32D2D;
+}
+
+.carro img{
+    width: 52px;
+    max-width: 100%;
+}
+
+/*Boton de login de la pagina*/
+.carrito_loggin{
+    background-color: #FFFFFF;
+    color: #A32D2D;
+    display: flex;
+    width: 210px;
+    height: 46px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.carrito_loggin a{
+    color: #A32D2D;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.carro{
+    cursor: pointer;
+}
+
+/*Banner de regalos*/
+.banner_regalos{
+    background-color: #EFCAD0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 56px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.banner {
+    width: 960px;
+}
+.letras_ban{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-left: 90px;
+    width: 650px;
+}
+
+.Animacion_banner{
+    display: flex;
+}
+
+.Animacion_banner :hover{
+    h2{
+        cursor: pointer; /*Si el mouse pasa por encima deñ elemento cambia a la mano indicador de click*/
+        color: red;
+    }
+    .boton_banner{
+        color: white;
+    }
+    .boton_banner img{
+        transform: rotate(-11.86deg); /*ayuda a la rotacion de la imagen -11deg ratocion de 11 grados derecha y 11 positivo viceversa*/
+    }
+}
+
+.boton_banner{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #3F2537;
+    width: 577px;
+    border-radius: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+.boton_banner a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 54px;
+    font-weight: 545;
+}
+
+/*Ranking de productos*/
+
+.text_rank{
+    display: flex;
+    justify-content: center;
+    background-color: #770A00;
+    color: #FFFFFF;
+    height: 100px;
+    align-items: center;
+}
+
+.ver_todos{
+    margin-top: 20px;   
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    margin-left: 90%;
+}
+.ver_todos img{
+    width: 25%;
+}
+.ver_todos a{
+    text-decoration: none;
+    color: #3F2537;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*Targetas de ranking*/
+
+.prod_rank{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-left: 2%;
+    margin-top: 24px;
+}
+
+.targeta_prod{
+    display: grid;
+    grid-template-columns: 1fr 12fr 100fr 3fr;
+    background-color: #FFDCD5;
+    align-items: center;
+    width: 1845px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*Trgeta Ranking 1*/
+.barra1{
+    background-color: #EFB810;
+    width: 1500px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+/*Targetra Ranking 2*/
+.barra2, .barra3{
+    display: flex;
+}
+.barra2_0{
+    background-color: #E57709;
+    width: 1350px;
+    height: 10px;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.barra2_1{
+        background-color: #FBFBFB;
+        width: 150px;
+        height: 10px;
+        border-radius: 0 10px 10px 0;
+    }
+.top{
+    margin-top: -57px;
+}
+
+/*Targeta Ranking 3*/
+
+.barra3_0{
+    background-color: #CD0000;
+    width: 1250px;
+    height: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.barra3_1{
+    background-color: #FBFBFB;
+    height: 10px;
+    width: 250px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*Filtros*/
+
+.filtros_DiaEspecial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 10%;
+}
+.filtro {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+.filtro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.filtro a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    width: 75px;
+    left: 56px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transform: translate(-50%, -50%5);
+}
+
+/*Targetas de productos*/
+
+.targeta_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 135px;
+    margin-top: 156px;
+    margin-left: 135px;
+}
+
+.regalos-prod img{
+    max-width: 100%; /*No deja que la imagen sea mas grade que su targeta*/
+    height: auto; /*mantiene el tamaños original de la imagen*/
+    display: block; /*convierte la imagen en un elemento de bloque*/
+    margin: 0 auto; /*Centra horixontalmente la imagen*/
+    margin-top: 20px; 
+    object-fit: contain; /*Hace que la imgen completa se vea dentro de la targeta*/
+}
+
+.regalos-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    color: #72243E;
+    border: 2px solid #F4C0D1;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 400px;
+    height: 472px;
+}
+.continuara_{
+    background-color: #FFF8F2;
+    border-radius: 20px;
+    h4{
+        font-size: 32px;
+        margin-left: 90px;
+    }
+}
+
+.regalos-prod p, .precio{
+    margin-left: 15px;
+}
+
+.precio{
+    color: #D4537E;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.agr_canasta{
+    background-color: #3F2537;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.añad_carrito{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid  #DD00FF;
+    background-color: #FFFFFF;
+}
+
+.canasta_text{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding: 0 21px;
+    align-items: center;
+    
+}
+.canasta_text h2{
+        font-size: 32px;
+}
+
+.linea-canat{
+    background-color: #DFCAB6;
+    width: 60%;
+    height:2px;
+}
+.ver_canast{
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    gap: 7px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #3F2537;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.videos_canast{
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flecha_cans{
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+.video-cans{
+    width: 78%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer de la pagina*/
+footer{
+    margin-top: 50px;
+    background-color: #A32D2D;
+    width: 100%;
+    height: 220px;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Parte principal del footer */
+.footer_contenido{
+    height: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: start;
+    padding: 18px 60px 0 60px;
+    box-sizing: border-box;
+}
+
+footer p{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Columna izquierda */
+.foot img{
+    width: 230px;
+    margin-top: 6px;
+}
+
+/* Columna centro */
+.canales{
+    display: flex;
+    flex-direction: column;
+}
+
+.canales > p{
+    width: 100%;
+    margin-left: -10px; 
+}
+
+.ico{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*iconos bajan si no caben*/
+    gap: 28px;
+    margin-top: 14px;
+}
+
+.ico img{
+    width: 50px;
+    height: 50px;
+}
+
+.url_quien_som{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.url_quien_som img{
+    width: 28px;
+    height: 28px;
+}
+
+/* Columna derecha */
+.Tiendas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tiendas img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain; /*mantiene la imagen original si salirse de caja*/
+    margin-top: 25px;
+}
+
+/* Barra inferior */
+.footer_links{
+    height: auto; /*Calcula la altura automaticamente*/
+    margin-top: -30px;
+    height: 35px; 
+    background-color: #e8bcbc;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 8px 8px;
+    box-sizing: border-box;
+}
+
+.footer_links a {
+    color: #A32D2D;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
