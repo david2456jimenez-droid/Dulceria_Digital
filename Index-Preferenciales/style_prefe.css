@@ -188,16 +188,16 @@ main{
     gap: 40px;
     font-weight: 600;
     width: 390px;
-    height: 420px;
+    height: 470px;
     border: 2px solid #A32D2D;
     border-radius: 4%;
     button{
         background: linear-gradient(#9C0000, #E8005D);
         border: none;
         color: #FFFFFF;
-        width: 365px;
+        width: 100%;
         border-radius: 10px;
-        height: 64px;
+        height: 80px;
         border: 20px;
         font-size: 22px;
         font-weight: 600;
@@ -225,34 +225,13 @@ main{
 }
 
 .targeta img{
-    max-width: 50%; /*No deja que la imagen sea mas grade que su targeta*/
+    max-width: 40%; /*No deja que la imagen sea mas grade que su targeta*/
     height: auto; /*mantiene el tamaños original de la imagen*/
     display: block; /*convierte la imagen en un elemento de bloque*/
     margin: 0 auto; /*Centra horixontalmente la imagen*/
     margin-top: 20px; 
     object-fit: contain; /*Hace que la imgen completa se vea dentro de la targeta*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Footer de la pagina*/
