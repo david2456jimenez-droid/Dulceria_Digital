@@ -214,6 +214,7 @@ main{
     background-color: black;
     transform: rotate(175deg);
     margin-top: -15px;
+    z-index: -122;
 }
 .precio_desc{
     margin-left: 5px;
