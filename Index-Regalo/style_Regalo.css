@@ -5,10 +5,6 @@
 }
 /*Este es el head o cabezera de la pagina*/
 
-header{
-    position: fixed;
-    width: 100%;
-}
 
 body{
     background-color: #FFF8F2;      
@@ -117,7 +113,6 @@ main{
     font-size: 56px;
     text-align: center;
     justify-content: center;
-    margin-top: 150px;
 }
 .banner {
     width: 960px;
@@ -238,7 +233,7 @@ main{
         width: 150px;
         height: 10px;
         border-radius: 0 10px 10px 0;
-    }
+}
 .top{
     margin-top: -57px;
 }
@@ -413,48 +408,6 @@ main{
     width: 78%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Footer de la pagina*/
 footer{
     margin-top: 50px;
@@ -559,3 +512,242 @@ footer p{
     font-size: 12px;
     font-weight: 700;
 }
+
+/* Resposive android 375-----------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px)
+{
+    .mostrar-menu {
+        display: block;
+        color: white;
+        order: 3;
+    }
+
+    /*ocultar nav por defecto */
+    .naveg_page {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #812020;
+        padding: 20px 0;
+        z-index: 999; /*para dejar el elemento por encima*/
+        gap: 5px;
+    }
+    
+    #check:checked ~ .naveg_page {
+        display: flex;
+    }
+
+    /*Mostar la X para cerrar*/
+    .esconder-menu {
+        display: block;
+        color: white;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /*Ajustar links dentro del menu*/
+    .naveg_page a {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    /*Cabezera*/
+    .cabezera{
+        height: 120px;
+        width: 768px;
+        .carrito_loggin {
+            width: 150px;
+        }
+        .carro img{
+            width: 78%;
+            top: 50px;
+        }
+    }
+    .banner_regalos{
+        font-size: 20px;
+    }
+    .banner{
+        width: 355px;
+        margin-left: -130px;
+    }
+    .boton_banner{
+        width: 300px;
+        height: 90px;
+        border-radius: 21px;
+    }
+    .boton_banner a{
+        font-size: 24px;
+    }
+    .boton_banner img{
+        width: 90%;
+    }
+    .banner_regalos{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        width: 570px;
+        
+    }
+    .letras_ban h2{
+        font-size: 20px;
+    }
+    .text_rank{
+        font-size: 24px;
+        font-weight: 500;
+        height: 90px;
+    }
+
+    .ver_todos{
+        margin-left: 80%;
+    }
+    .ver_todos img{
+        width: 15%;
+    }
+    .ver_todos a{
+        font-size: 20px;
+    }
+
+    /*Targetas de ranking*/
+    .targeta_prod{
+        width: 760px;
+        height: 100px;
+    }
+
+    /*Targeta ranking*/
+    .barra1{
+        width: 520px;
+        height: 10px;
+    }
+    
+    .barra2_0{
+        width: 355px;
+        height: 10px;
+    
+    }
+    .barra2_1{
+        width: 170px;
+        height: 10px;
+    }
+    /*Targeta Ranking 3*/
+    .barra3_0{
+        width: 340px;
+        height: 10px;
+    }
+    .barra3_1{
+        height: 10px;
+        width: 180px;
+    }
+    .top{
+        width: 50px;
+    }
+    .filtro{
+        width: 80px;
+        height: 80px;
+    }
+    .filtro a{
+        font-size: 10px;
+        font-weight: 200;
+        margin-left: -50px;
+        margin-top: -5px;
+    }
+    .targeta_productos{
+        margin-top: 2px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .regalos-prod{
+        width: 200px;
+        height: 272px;
+        p{
+            font-size: 20px;
+        }
+    }
+    .regalos-prod img{
+        width: 30%;
+    }
+    .regalos-prod{
+        margin-left: 1%;
+    }
+    .agr_canasta{
+        font-size: 10px;
+        width: 120px;
+        height: 40px;
+    }
+    .añad_carrito{
+        font-size: 10px;
+        width: 120px;
+        height: 40px;
+    }
+    .continuara_{
+        text-align: center;
+        width: 200px;
+        height: 320px;
+        h4{
+            font-size: 19px;
+            margin-left: 1px;
+        }
+        
+    }
+    .continuara_ img{
+        margin-left: 70px;
+    }
+    .canasta_text h2{
+        font-size: 15px;
+    }
+    .ver_canast a{
+        font-size: 15px;
+    }
+    .ver_canast img{
+        width: 20%;
+    }
+    .linea-canat{
+        width: 20%;
+    }
+
+    /*Footer*/
+    .foot {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .url_quien_som img{ 
+        width: 15px;
+        height: 15px;
+    }
+    .url_quien_som{
+        margin-top: 12px;
+    }
+    .canales img{
+        width: 30px;
+        height: 30px;
+    }
+    .canales{
+        p{
+            font-size: 15px;
+        }
+    }
+    .ico{
+        gap: 10px;
+    }
+    /**/
+    footer{
+        height: 200px;
+    }    
+    .Tiendas{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}   

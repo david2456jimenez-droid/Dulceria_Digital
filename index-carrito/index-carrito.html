@@ -5,96 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style-carrito.css">
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-        }
-    </style>
 </head>
 <body>
     <header>
-
+        <div class="cabezera">
+                <div class="logo_oficial">
+                <img src="img/Cabezera/logo_oficial.png" alt="Logo.png">
+            </div>
+            <input type="checkbox" id="check"> <!-- caja de opciones -->
+            <label for="check" class="mostrar-menu">
+                &#8801;
+            </label>
+            <nav class="naveg_page">
+                <a href="#"> Dulceria</a>
+                <a href="#">Regalos</a>
+                <a href="#">¿Quienes Somos?</a>
+                <label for="check" class="esconder-menu">
+                    &#215;
+                </label>
+            </nav>
+            <div class="carro"><img src="img/Cabezera/Shopping Cart.png" alt="Shopping.png" width="52px"></div>
+                <div class="carrito_loggin">
+                    <a href=""><img src="img/Cabezera/Test Account.png" alt="loggin.png" width="35px"></a>
+                    <a href="#ingresar">Ingresar</a>
+                </div>
+            </div>
     </header>
+    
     <main>
-        <section class="targetas">
-            <div class="div-targ">
-                <!--Targeta-->
-                <div class="target_cab">
-                    <input type="checkbox" id="check">
-                    <h4>Todos los productos</h4>
-                </div>
-                
-                <div class="target_cab1">
-                    <div class="check-img">
-                        <input type="checkbox" id="check">
-                        <img src="img/chimuelo.png" alt="">
-                    </div>
-                    <!--Targeta 1-->
-                    <div class="informacion">
-                        <p>Chimuelo </p>
-                        <button class="eliminar">Eliminar</button>
-                        <h2>$ 44.980</h2>
-                    </div>
-
-                    <div class="btn-cantidad">
-                        <p>+</p>
-                        <p class="num">1</p>
-                        <p>-</p>
-                    </div>
-                    <div class="linea-car"></div>
-                    <div class="info">
-                        <h3>Informacion de envio</h3>
-                        <p>Por ser su primera compra su envio es gratuito</p>
-                    </div>
-                </div>
-                <div class="target_cab1">
-                    <input type="checkbox" id="check">
-                    <img src="img/canasta.png" alt="">
-                </div>
-            </div>
-            
-            <div class="resumen">
-                <div class="tabla_total">
-                <h2>Resumen de compra</h2>
-                <div class="linea"></div>
-                <div precio-total>
-                    <p>Productos (2)</p>
-                    <p>$ 164.980</p>
-                    <p>$ 5.000</p>
-                    <p>Coste de Envio</p>
-                    <h3>Total</h3>
-                    <p>$ 169.988</p>
-                </div>
-                <div class="targ-pago">
-                    <img src="img/PSE.png" alt="">
-                    <a href="#pagos">Continuar pago por PSE</a>
-                </div>
-
-                <div class="targ-pago">
-                    <img src="img/Visa.png" alt="">
-                    <a href="#pagos">Continuar pago por Targeta</a>
-                </div>
-                </div>
-            
-        </section>
-
-        <section class="articulos">
-            <div class="text-prod">
-                <h2>Productos para tu carrito</h2>
-                <div class="raya"></div>
-                <div class="vermas">
-                    <a href="#vercarritoo">Ver mas</a>
-                    <img src="img/Right Arrow.png" alt="">
-                </div>
-            </div>
-
-            <div class="prod">
-
-            </div>
+        <section class="targetas-precio">
+            <div class="imagen-check"></div>
         </section>
     </main>
+
     <footer>
-        
+        <div class="footer_contenido">
+            <div class="foot">
+                <p>Tu Dulceria Favorita</p>
+                <img src="img/Footer/logo_oficial.png" alt="logo.png">
+            </div>
+
+            <div class="canales">
+                <p>Visita Nuestros canales digitales</p>
+                <div class="ico">
+                    <img src="img/Footer/youtube blanco 1.png" alt="youtube">
+                    <img src="img/Footer/Twitter Circled.png" alt="twitter">
+                    <img src="img/Footer/Facebook.png" alt="Facebook">
+                    <img src="img/Footer/Instagram Circle.png" alt="Instagram">
+                    <img src="img/Footer/WhatsApp.png" alt="Whatsapp">
+                </div>
+                <div class="url_quien_som">
+                    <p>¿Quienes Somos?</p>
+                    <img src="img/Footer/con-park_share.png" alt="visited">
+                </div>
+            </div>
+
+            <div class="Tiendas">
+                <p>Visita Nuestras Tiendas</p>
+                <img src="img/Footer/Shop Location.png" alt="tienda_icono">
+            </div>
+        </div>
+        <!-- Terminos y condiciones de la pagina -->
+        <div class="footer_links">
+            <a href="">Términos y condiciones</a>
+            <a href="">Políticas de privacidad</a>
+            <a href="">Contactos</a>
+        </div>
     </footer>
 </body>
 </html>

@@ -2,114 +2,121 @@
     margin: 0;
     padding: 0;
 }
-header{
-    /*position: fixed;*/
-    width: 100%;
-}
-
-body{
-    background-color: #FFF8F2;      
-}
-
-.cabezera{
-    background-color: #A32D2D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    width: 100%;
-    font-size: 24px;
-    gap: 25px;
-    box-sizing: border-box; 
+.banner{
+    position: relative;
+    .letra{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 296px;
+        position: absolute;
+        color: #ffff;
+        text-align: center;
+        h2{
+            font-size: 56px;
+            width: 100%;
+            font-size: 98px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
     
 }
-.logo_oficial img{
-    width: 200px;
-    max-width: 100%;
-    margin-top: 25px;
+.logo{
+    width: 15%;
+    position: absolute;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.banner-{
+    width: 100%;
 }
 
-.mostrar-menu,
-.esconder-menu{
-    font-size: 30px;
-    cursor: pointer; /*le dara interaction con el cursor a los iconos de amburguesa y equis */
-    display: none; /*desaparecera y solo aparecera cuando se ajuste al tamaño*/
-    transition: 0.4s;/*Ayuda a tener una animacion mas suave y no tan tosca*/
-}
-
-.mostrar-menu{
-    order: 1;/*le da el orden para que aparesca detras de los demas elementos*/
-}
-#check{
-    display: none; /*Es para que la caja de opcion "check" no aparesca por ahora*/
-}
-
-/*Navegador de la pagina*/
-
-main{
+/*Seccion de aruta de los pedidos*/
+.ruta{
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-}
+    margin-left: 40px;
 
-.naveg_page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
-
-.naveg_page a{
-    color: #FFFFFF;
-    text-decoration: none;
-    width: 250px;
-    padding: 0 10px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    transition: background-color 0.2 ease, color 0.2 ease;
+.ruta1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 190px;
 }
-
-.naveg_page a:hover{
-    background-color: #FFE8E8;
-    color: #A32D2D;
-}
-
-.carro img{
-    width: 52px;
-    max-width: 100%;
-}
-
-/*Boton de login de la pagina*/
-.carrito_loggin{
-    background-color: #FFFFFF;
-    color: #A32D2D;
-    display: flex;
-    width: 210px;
-    height: 46px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: center;
+.barra{
+    padding: 0 11%;
+    width: 75%;
+    height: 20px;
+    background-color: #FFEBEB;
     border-radius: 10px;
 }
-
-.carrito_loggin a{
-    color: #A32D2D;
-    text-decoration: none;
+.nombre{
+    font-size: 32px;
+    font-weight: bold;
+}
+.precio{
+    font-size: 28px;
+    font-weight: 700;
+}
+.PedidosReciente{
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.targetas{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr;
+    background-color: #fcf0f0; 
+    width: 1870px;
+    height: 190px;
+    border-radius: 20px;
+    font-size: 24px;
+    align-items: center;
+}
+.targetas img{
+    margin-left: 20px;
 }
 
-.carro{
+.Entregado, .EnCamino, .Preparado{
+    width: 260px;
+    height: 60px;
+    border: none;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.let{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Entregado{
+    background-color: #0B6000;
+    color: #ffff;
     cursor: pointer;
 }
-
-/*Cuerpo de la pagina*/
-.targetas-precio{
-    
+.EnCamino{
+    background-color: #C57000;
+    color: #ffff;
+    cursor: pointer;
 }
+.Preparado{
+    background-color: #A32D2D;
+    color: #ffff;
+    cursor: pointer;    
+}
+
+
+
 
 
 
