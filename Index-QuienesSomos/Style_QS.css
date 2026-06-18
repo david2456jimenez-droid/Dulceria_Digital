@@ -3,10 +3,9 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*Este es el head o cabezera de la pagina*/
 
+/*Este es el head o cabezera de la pagina*/
 header{
-    position: fixed;
     width: 100%;
 }
 
@@ -114,7 +113,6 @@ main{
     width: 100%;
 }
 .banner{
-    margin-top: 7%;
     display: flex;
     flex-direction: column;
     font-size: 32px;
@@ -123,7 +121,6 @@ main{
 }
 
 /*Seccion*/
-
 .targetas-{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -290,4 +287,129 @@ footer p{
     margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+/*Responsive tableta tableta 768px*/
+@media (max-width: 768px)
+{
+    .mostrar-menu{
+        display: block;
+        color: #FFFFFF;
+        order: 3;
+    }
+
+    /*Ocultar nav por defeecto*/
+    .naveg_page {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #812020;
+        padding: 20px 0;
+        z-index: 999;
+        gap: 5px;
+    }
+
+    #check:checked ~ .naveg_page{
+        display: flex;
+    }
+
+    /*Mostrar la X para cerrar*/
+    .esconder-menu{
+        display: block;
+        color: #ffff;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /*Ajustar links dentro del menu*/
+    .naveg_page a{
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+    .cabezera{
+        height: 120px;
+        width: 768px;
+        .carrito_loggin {
+            width: 150px;
+        }
+        .carro img{
+            width: 78%;
+            top: 50px;
+        }
+    }
+
+    .banner{
+        font-size: 20px;
+    }
+    .targeta img{
+        width: 200px;
+    }
+    .targetas-{
+        margin-left: 50px;
+    }
+    .btn_visit{
+        height: 80px;
+        border-radius: 15px;
+        font-size: 20px;
+        gap: 1px;
+    }
+    .ubicacion_Tiends img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Footer*/
+    .foot {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .url_quien_som img{ 
+        width: 15px;
+        height: 15px;
+    }
+    .url_quien_som{
+        margin-top: 12px;
+    }
+    .canales img{
+        width: 30px;
+        height: 30px;
+    }
+    .canales{
+        p{
+            font-size: 15px;
+        }
+    }
+    .ico{
+        gap: 10px;
+    }
+    /**/
+    footer{
+        height: 200px;
+    }    
+    .Tiendas{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }   
+}
+/*Resposive android*/
+@media (max-width: 375px)
+{
+    .cabezera{
+        gap: 5px;
+    }
 }
