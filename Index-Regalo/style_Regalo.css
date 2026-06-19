@@ -104,7 +104,6 @@ main{
 .carro{
     cursor: pointer;
 }
-
 /*Banner de regalos*/
 .banner_regalos{
     background-color: #EFCAD0;
@@ -283,7 +282,13 @@ main{
     text-decoration: none;
     color: white;
     font-weight: 600;
-    transform: translate(-50%, -50%5);
+    
+}
+
+.carrito a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #24000C;
 }
 
 /*Targetas de productos*/
@@ -750,4 +755,159 @@ footer p{
         }
     }
 
-}   
+}
+/*Responsive android*/
+@media (max-width: 375px)
+{
+    .cabezera img{
+        width: 140px;
+    }
+
+    .cabezera{
+        width: 375px;
+        height: 100px;
+        padding: 0 20px;
+    }
+    .carrito_loggin img{
+        width: 20px;
+    }
+    .carrito_loggin{
+        height: 35px;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .naveg_page a{
+        font-size: 10px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+        height: 125px;
+    }
+    .banner{
+        margin-left: -195px;
+        width: 220px;
+        height: 260px;
+    }
+    .boton_banner{
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        a{
+            font-size: 10px;
+        }
+        
+    }
+    .letras_ban h2{
+        font-size: 10px;
+    }
+    .letras_ban{
+        margin-left: -220px;
+    }
+    .text_rank{
+        font-size: 15px;
+        height: 40px;
+    }
+    .ver_todos{
+        a{
+            font-size: 10px;
+        }
+    }
+    .targeta_prod{
+        width: 375px;
+    }
+    .barra1{
+        width: 100%;
+    }
+    .barra2_0{
+        width: 182px;
+    }
+    .barra2_1{
+        width: 40px;
+    }
+    .barra3_0{
+        width: 150px;
+    }
+    .barra3_1{
+        width: 100px;
+    }
+    .filtros_DiaEspecial{
+        margin-left: 22px;
+        gap: 1px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .targeta_productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-left: 80px;
+    }
+    .regalos-prod{
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Footer de android*/
+    .naveg_page a{
+        font-size: 10px;
+        height: 5px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+    }
+    .foot{
+        padding: 0 40px;
+        margin-left: -80px;    
+    }
+    .foot img{
+        width: 80px;
+        margin-left: -10px;
+    }
+    .ico p, .foot p, .Tiendas p, .canales p{
+        font-size: 10px;
+    }
+    .ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Tiendas{       
+        margin-left: 20px;
+        width: 80px;
+        justify-content: center;
+    }
+    .Tiendas img{
+        width: 30px;
+    }
+    .ico img{
+        width: 30px;    
+        height: 30px;
+        margin-left: -14px;
+    }
+    .url_quien_som img{
+        width: 20px;
+        height: 20px;
+    }
+    .url_quien_som{
+        width: 120px;
+        margin-left: -15px;
+    }.footer_links{
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-size: 10px;
+        }
+    }
+}

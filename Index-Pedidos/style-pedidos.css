@@ -4,26 +4,24 @@
 }
 .banner{
     position: relative;
-    .letra{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+}
+.letra{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 296px;
+    position: absolute;
+    color: #ffff;
+    text-align: center;
+    h2{
         width: 100%;
-        justify-content: center;
-        margin-top: 296px;
-        position: absolute;
-        color: #ffff;
-        text-align: center;
-        h2{
-            font-size: 56px;
-            width: 100%;
-            font-size: 98px;
-        }
-        p{
-            font-size: 24px;
-        }
+        font-size: 98px;
     }
-    
+    p{
+        font-size: 24px;
+    }
 }
 .logo{
     width: 15%;
@@ -114,15 +112,8 @@
     color: #ffff;
     cursor: pointer;    
 }
-
-
-
-
-
-
 /*Footer de la pagina*/
 footer{
-    margin-top: 50px;
     background-color: #A32D2D;
     width: 100%;
     height: 220px;
@@ -223,4 +214,209 @@ footer p{
     margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+/*Tablets*/
+@media (max-width: 768px)
+{
+
+    .letra{
+        margin-top: 100px;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+    .ruta1 img{
+        width: 40px;
+    }
+    .ruta1{
+        margin-left: 40px;
+    }
+    .barra{
+        margin-top: -34px;
+        height: 10px;
+    }
+    .rt{
+        text-align: center;
+    }
+    .targetas{
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        width: 745px;
+        height: 180px;
+        gap: 10px;   
+        font-size: 18px;
+        gap: 50px;
+        img{
+            width: 60px;
+        }
+    }
+    .nombre, .precio{font-size: 24px;}
+    .Entregado, .EnCamino, .Preparado{
+        
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .footer_contenido{
+        margin-top: 20px;
+    }
+    .foot {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .url_quien_som img{ 
+        width: 15px;
+        height: 15px;
+    }
+    .url_quien_som{
+        margin-top: 12px;
+    }
+    .canales img{
+        width: 30px;
+        height: 30px;
+    }
+    .canales{
+        p{
+            font-size: 15px;
+        }
+    }
+    .ico{
+        gap: 10px;
+    }
+    /**/
+    footer{
+        height: 200px;
+    }    
+    .Tiendas{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }   
+}
+
+/*Resposibe*/
+@media (max-width: 375px)
+{
+    .banner-{
+        width: 100%;
+        height: 200px;
+    }
+    .logo{
+        width: 90px;
+    }
+    .letra{
+        margin-top: 70px;
+        h2{
+            font-size: 17px;
+        }
+        p{
+            font-size: 9px;
+        }
+    }
+    .let{
+        gap: 10px;
+    }
+    .rt img{
+        width: 30px;
+    }
+    .ruta1{
+        justify-content: center;
+        margin-left: 10px;
+        font-size: 10px;
+        gap: 40px;
+    }
+    .targetas{
+        width: 370px;
+        height: 115px;
+        margin-left: 2px;
+        gap: 15px;
+    }
+    .targetas img{
+        width: 40px;
+    }
+    .Entregado, .EnCamino, .Preparado{
+        width: 60px;
+        height: 40px;
+        font-size: 10px;
+        
+    }
+    .barra{
+        margin-top: -30px;
+        height: 5px;
+        width: 290px;
+        margin-left: -32px;
+    }
+    .nombre{
+        font-size: 20px;
+    }
+    .precio{
+        font-size: 18px;
+    }
+    .let{
+        font-size: 15px;
+    }
+    /*Footer de android*/
+    .naveg_page a{
+        font-size: 10px;
+        height: 5px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+    }
+    .foot{
+        padding: 0 40px;
+        margin-left: -80px;    
+    }
+    .foot img{
+        width: 80px;
+        margin-left: -10px;
+    }
+    .ico p, .foot p, .Tiendas p, .canales p{
+        font-size: 10px;
+    }
+    .ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Tiendas{       
+        margin-left: 20px;
+        width: 80px;
+        justify-content: center;
+    }
+    .Tiendas img{
+        width: 30px;
+    }
+    .ico img{
+        width: 30px;    
+        height: 30px;
+        margin-left: -14px;
+    }
+    .url_quien_som img{
+        width: 20px;
+        height: 20px;
+    }
+    .url_quien_som{
+        width: 120px;
+        margin-left: -15px;
+    }.footer_links{
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-size: 10px;
+        }
+    }
 }

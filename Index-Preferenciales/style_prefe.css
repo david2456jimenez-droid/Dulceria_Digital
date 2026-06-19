@@ -6,10 +6,6 @@
 }
 /*Este es el head o cabezera de la pagina*/
 
-header{
-    position: fixed;
-    width: 100%;
-}
 
 body{
     background-color: #FFF8F2;      
@@ -113,7 +109,7 @@ main{
 /*Section Beneficios preferenciales*/
 /*Texto Titulo*/
 .banner_prefe img{
-    margin-top: 100px;
+    margin-top: -2px;
     width: 100%;
 }
 .texto_benef{
@@ -156,11 +152,6 @@ main{
         font-size: 32px;
         font-weight: 700;
     }
-}
-.linea_of{
-    background-color: #3A1808;
-    width: 480px;
-    height: 1px;
 }
 
 .parraf_ofert{
@@ -338,4 +329,262 @@ footer p{
     margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+
+/*Responsive tableta tableta 768px*/
+@media (max-width: 768px)
+{
+    .mostrar-menu{
+        display: block;
+        color: #FFFFFF;
+        order: 3; /*Cambiar el oarden de los objetos de la cabezera*/
+    }
+
+    /*Ocultar nav por defeecto*/
+    .naveg_page {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #812020;
+        padding: 20px 0;
+        z-index: 999;
+        gap: 5px;
+    }
+
+    #check:checked ~ .naveg_page{
+        display: flex;
+    }
+
+    /*Mostrar la X para cerrar*/
+    .esconder-menu{
+        display: block;
+        color: #ffff;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /*Ajustar links dentro del menu*/
+    .naveg_page a{
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+    .cabezera{
+        height: 120px;
+        width: 768px;
+        .carrito_loggin {
+            width: 150px;
+        }
+        .carro img{
+            width: 78%;
+            top: 50px;
+        }
+    }
+    .linea{
+        width: 180px;
+    }
+    .texto_benef h2{
+        font-size: 24px;
+    }
+    .targeta_beneficios img{
+        width: 90%;
+        height: 220px;
+    }
+    .texto_ofert h2{
+        font-size: 24px;
+    }
+    .parraf_ofert{
+        font-size: 18px;
+    }
+    .targeta_producto{
+        grid-template-columns: 1fr 1fr;
+    }
+    .targeta{
+        margin-left: -42px;
+        width: 280px;
+        height: 370px;
+        gap: 10px;
+        font-weight: 545;
+        p{
+            font-size: 17px;
+        }
+    }
+    /*Footer*/
+    .foot {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .url_quien_som img{ 
+        width: 15px;
+        height: 15px;
+    }
+    .url_quien_som{
+        margin-top: 12px;
+    }
+    .canales img{
+        width: 30px;
+        height: 30px;
+    }
+    .canales{
+        p{
+            font-size: 15px;
+        }
+    }
+    .ico{
+        gap: 10px;
+    }
+    /**/
+    footer{
+        height: 200px;
+    }    
+    .Tiendas{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }   
+}
+
+/*resposive android*/
+@media (max-width: 375px)
+{
+    .cabezera img{
+        width: 140px;
+    }
+
+    .cabezera{
+        width: 375px;
+        height: 100px;
+        padding: 0 20px;
+    }
+    .carrito_loggin img{
+        width: 20px;
+    }
+    .carrito_loggin{
+        height: 35px;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .naveg_page a{
+        font-size: 10px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+        height: 125px;
+    }
+    .texto_benef{
+        h2{
+            font-size: 12px;
+        }
+    }
+    .linea{
+        width: 80px;
+    }
+
+    .targeta_beneficios img{
+        width: 118px;
+        height: 120px;
+    }
+    .targeta_beneficios{
+        margin-left: 2%;
+    }
+
+    .texto_ofert{
+        h2{
+            font-size: 12px;
+        }
+    }
+    .parraf_ofert{
+        font-size: 10px;
+    }
+
+    /*seccion de productos*/
+
+    .targeta_producto{
+        grid-template-columns: 1fr 6fr;
+        gap: 5px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    .targeta{
+        margin-top: 10px;
+        width: 160px;
+        height: 250px;
+        margin-left: 12px;
+        gap: 12px;
+        button{
+            font-size: 10px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        P{
+            font-size: 10px;
+        }
+    }
+    .precio_desc{
+        margin-left: 2px;   
+    }
+    .raya{
+        width: 40px;
+        height: 1px;
+        margin-top: -5px;
+        margin-left: 12px;
+    }
+
+    /*Footer de android*/
+    .foot{
+        padding: 0 40px;
+        margin-left: -80px;    
+    }
+    .foot img{
+        width: 80px;
+        margin-left: -10px;
+    }
+    .ico p, .foot p, .Tiendas p, .canales p{
+        font-size: 10px;
+    }
+    .ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .Tiendas{
+        margin-left: 20px;
+        width: 120px;
+    }
+    .Tiendas img{
+        width: 30px;
+    }
+    .ico img{
+        width: 30px;    
+        height: 30px;
+        margin-left: -14px;
+    }
+    .url_quien_som img{
+        width: 20px;
+        height: 20px;
+    }
+    .url_quien_som{
+        width: 120px;
+        margin-left: -15px;
+    }.footer_links{
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-size: 10px;
+        }
+    }
 }

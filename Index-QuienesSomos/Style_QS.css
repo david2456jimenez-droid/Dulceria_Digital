@@ -21,7 +21,7 @@ body{
     padding: 0 5%;
     width: 100%;
     font-size: 24px;
-    gap: 25px;
+    
     box-sizing: border-box; 
     
 }
@@ -295,7 +295,7 @@ footer p{
     .mostrar-menu{
         display: block;
         color: #FFFFFF;
-        order: 3;
+        order: 3; /*Cambiar el oarden de los objetos de la cabezera*/
     }
 
     /*Ocultar nav por defeecto*/
@@ -409,7 +409,113 @@ footer p{
 /*Resposive android*/
 @media (max-width: 375px)
 {
+
+    .cabezera img{
+        width: 90px;
+    }
+
     .cabezera{
-        gap: 5px;
+        width: 375px;
+        padding: 0 20px;
+    }
+    .banner img{
+        width: 375px;
+    }
+    .banner p{
+        width: 375px;
+        font-size: 10px;
+    }
+    .targetas-{
+        gap: 40px;
+    }
+    .Mision_Vision{
+        gap: 20px;
+    }
+    .btn_visit{
+        height: 50px;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+        font-size: 5px;
+    }
+    .carrito_loggin img{
+        width: 20px;
+    }
+    .carrito_loggin{
+        height: 35px;
+        gap: 10px;
+        font-size: 15px;
+    }
+    .carro{
+        width: 30px;
+    }
+    .targeta img{
+        width: 90px;
+    }
+    .targetas-{
+        margin-left: 15px;
+        gap: 10px;
+    }
+    .Mision_Vision{
+        margin-top: -30px;
+    }
+    .btn_visit{
+        width: 70px;
+        height: 30px;
+
+    }
+    .linea{
+        width: 100px;
+    }
+    .naveg_page a{
+        font-size: 10px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+        height: 125px;
+    }
+    
+    /*Footer de android*/
+    .foot{
+        padding: 0 40px;
+        margin-left: -80px;    
+    }
+    .foot img{
+        width: 80px;
+        margin-left: -10px;
+    }
+    .ico p, .foot p, .Tiendas p, .canales p{
+        font-size: 10px;
+    }
+    .ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .Tiendas{
+        margin-left: 20px;
+        width: 120px;
+    }
+    .Tiendas img{
+        width: 30px;
+    }
+    .ico img{
+        width: 30px;    
+        height: 30px;
+        margin-left: -14px;
+    }
+    .url_quien_som img{
+        width: 20px;
+        height: 20px;
+    }
+    .url_quien_som{
+        width: 120px;
+        margin-left: -15px;
+    }.footer_links{
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-size: 10px;
+        }
     }
 }

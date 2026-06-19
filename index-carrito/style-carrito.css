@@ -6,7 +6,11 @@ header{
     /*position: fixed;*/
     width: 100%;
 }
-
+.mai11{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
 body{
     background-color: #FFF8F2;      
 }
@@ -45,13 +49,6 @@ body{
 }
 
 /*Navegador de la pagina*/
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
 .naveg_page{
     display: flex;
     align-items: center;
@@ -59,6 +56,136 @@ main{
     gap: 10px;
 }
 
+/*Seccion targetas de cada regalo */
+.targetas{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.flecha-izq{
+    width: 4%;
+}
+.boton-cant{
+    display: flex;
+    width: 120px;
+    background-color: #ffff;
+    border: 1px solid #9F9F9F;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 10px;
+    button{
+        cursor: pointer;
+        border: none;
+        background-color: #ffff;
+        font-size: 24px;
+    }
+}
+.targ{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr 4fr 24fr 4fr;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 170px;
+    font-size: 28px;
+    border-radius: 10px;
+    margin-left: 20px;
+    align-items: center;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.mini{
+    margin-top: 12px;
+    background-color: #bebebe;
+    width: 100px;
+    border-radius: 10px;
+}
+.eliminar_btn{
+    cursor: pointer;
+    margin-top: -100px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center; 
+    background-color: #FF2C2C;
+    color: #ffff;
+}
+
+
+.Nombre{
+    display: flex;
+    flex-direction: column;
+    margin-top: -57px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.ver_todos{
+    margin-top: -114px;
+    width: 120px;
+    font-size: 24px;
+    color: #3A1808;
+}
+
+.num{
+    margin-top: -80px;
+    margin-left: 30px;
+}
+.num1{
+    margin-left: 30px;
+}
+.targ1{
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 170px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*Seccion de targeta de todos lo productos*/
+.targeta-resum{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5%;
+    background-color: #FFFFFF;
+    width: 80%;
+    color: #3F3D3D;
+    font-size: 24px;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.linea{
+    margin-top: 12px;
+    width: 100%;
+    height: 2px;
+    background-color: #DFDFDF;
+}
+.prec{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.txt-total{
+    font-weight: 600;
+}
 .naveg_page a{
     color: #FFFFFF;
     text-decoration: none;
@@ -71,12 +198,36 @@ main{
     border-radius: 10px;
     transition: background-color 0.2 ease, color 0.2 ease;
 }
-
 .naveg_page a:hover{
     background-color: #FFE8E8;
     color: #A32D2D;
 }
+.pago-btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn-pago1, .btn-pago2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+    height: 60px;
+    padding: 0 20px;
+}
+.btn-pago1{
+    background-color: #210062;
+}
 
+.btn-pago2{
+    background-color: #5CB3CE;
+}
 .carro img{
     width: 52px;
     max-width: 100%;
@@ -105,14 +256,122 @@ main{
 .carro{
     cursor: pointer;
 }
-
-/*Cuerpo de la pagina*/
-.targetas-precio{
-    
+/*Targeta de productos que le pueden interesar al cliente*/
+.titulo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    h2{
+        font-size: 32px;
+    }
+}
+.line{
+    width: 70%;
+    height: 2px;
+    background-color: #949494;
 }
 
+.line1{
+    margin-top: 20px;
+    width: 90%;
+    height: 2px;
+    background-color: #949494;
+}
 
+.ver{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #3F3D3D;
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
+.targetas-dulc{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
 
+.targeta-dulce{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    margin-left: 16%;
+    height: 500px;
+    background-color: #FFFFFF;
+    border: 2px solid #F4C0D1;
+    font-size: 32px;
+    border-radius: 20px;
+}
+.img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.img img{
+    width:40%;
+}
+.text{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-top: 12px;
+    padding: 0 22px;
+}
+.btn-dulc button{
+    width: 100%;
+    height: 90px;
+    background-color: #A32D2D;
+    border: none;
+    color: #FFFFFF;
+    font-size: 32px;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+.btn-dulc :hover{
+    background-color: #FF8686;
+}
+
+/*Targetas de productos*/
+
+.targetas-regalo{    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 135px;
+    margin-top: 156px;
+    margin-left: 135px;
+}
+
+.targetas-regalo img{
+    max-width: 100%; /*No deja que la imagen sea mas grade que su targeta*/
+    height: auto; /*mantiene el tamaños original de la imagen*/
+    display: block; /*convierte la imagen en un elemento de bloque*/
+    margin: 0 auto; /*Centra horixontalmente la imagen*/
+    margin-top: 20px; 
+    object-fit: contain; /*Hace que la imgen completa se vea dentro de la targeta*/
+}
+
+.regalos-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    color: #72243E;
+    border: 2px solid #F4C0D1;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 400px;
+    height: 472px;
+}
 /*Footer de la pagina*/
 footer{
     margin-top: 50px;
@@ -122,9 +381,45 @@ footer{
     color: white;
     box-sizing: border-box;
 }
+.regalos-prod p, .precio{
+    margin-left: 15px;
+}
+
+.precio{
+    color: #D4537E;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.agr_canasta{
+    background-color: #3F2537;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.añad_carrito{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid  #DD00FF;
+    background-color: #FFFFFF;
+}
 
 /* Parte principal del footer */
 .footer_contenido{
+    margin-top: 100px;
     height: 225px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -216,4 +511,343 @@ footer p{
     margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+@media (max-width: 768px)
+{
+    .mostrar-menu {
+        display: block;
+        color: white;
+        order: 3;
+    }
+
+    /*ocultar nav por defecto */
+    .naveg_page {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #812020;
+        padding: 20px 0;
+        z-index: 999; /*para dejar el elemento por encima*/
+        gap: 5px;
+    }
+    
+    #check:checked ~ .naveg_page {
+        display: flex;
+    }
+
+    /*Mostar la X para cerrar*/
+    .esconder-menu {
+        display: block;
+        color: white;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /*Ajustar links dentro del menu*/
+    .naveg_page a {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    /*Cabezera*/
+    .cabezera{
+        height: 120px;
+        width: 768px;
+        .carrito_loggin {
+            width: 150px;
+        }
+        .carro img{
+            width: 78%;
+            top: 50px;
+        }
+    }
+
+    .targ1{
+        width: 400px;
+        height: 100px;
+    }
+
+    .targ{
+        width: 400px;
+        height: 150px;
+        grid-template-columns: 1fr 1fr 90fr 1fr 1fr;
+        
+    }
+    .mini{
+        width: 70px;
+    }
+    .num{
+        margin-top: 2px;
+    }
+    .Nombre{
+        margin-top: 20px;
+    }
+    .eliminar_btn{
+        
+        margin-left: -50px;
+        font-size: 15px;
+        width: 85px;
+        height: 20px;
+    }
+    .boton-cant{
+        width: 100px;
+        border: 3px solid #9F9F9F;
+    }
+    .ver_todos{
+        margin-top: -40px;
+        margin-left: -125px;
+    }
+    .btn-pago1, .btn-pago2{
+        font-size: 12px;
+    }
+    .targeta-resum{
+        font-size: 12px;
+    }
+    .titulo h2{
+        font-size: 20px;
+    }
+    .ver a{
+        font-size: 20px;
+    }
+    .line{
+        width: 220px;
+    }
+    .targeta-dulce{
+        font-size: 18px;
+        width: 220px;
+        height: 300px;
+        margin-left: 10px;
+        img{
+            width: 20%;
+        }
+    }
+
+    .targetas-regalo{
+        gap: 20px;
+        margin-left: 20px;
+    }
+    .regalos-prod{
+        font-size: 18px;
+        width: 220px;
+        height: 300px;
+        gap: 2px;
+        img{
+            width: 50%;
+        }
+    }
+
+    .agr_canasta, .añad_carrito{
+        font-size: 12px;
+    }
+
+    .btn-dulc button {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .line1{
+        width: 75%;
+    }
+    .ver a{
+        font-size: 18px;
+    }
+
+    .titulo{
+        align-items: center;
+    }
+    .precio{
+        font-size: 20px;
+    }
+     /*Footer*/
+    .foot {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .url_quien_som img{ 
+        width: 15px;
+        height: 15px;
+    }
+    .url_quien_som{
+        margin-top: 12px;
+    }
+    .canales img{
+        width: 30px;
+        height: 30px;
+    }
+    .canales{
+        p{
+            font-size: 15px;
+        }
+    }
+    .ico{
+        gap: 10px;
+    }
+    /**/
+    footer{
+        height: 200px;
+    }    
+    .Tiendas{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 375px)
+{
+
+    .cabezera img{
+        width: 140px;
+    }
+
+    .cabezera{
+        width: 375px;
+        height: 100px;
+        padding: 0 20px;
+    }
+    .carrito_loggin img{
+        width: 20px;
+    }
+    .carrito_loggin{
+        height: 35px;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .naveg_page a{
+        font-size: 10px;
+    }
+    .naveg_page{
+        margin-top: -22px;
+        height: 125px;
+    }
+    .targ1{
+        width: 340px;
+    }
+    .targ{
+        width: 340px;
+        height: 160px;
+    }
+    .Nombre{
+        margin-top: -70px;
+    }
+    .eliminar_btn{
+        margin-top: 120px;
+        margin-left: -135px;
+    }
+    .ver_todos{
+        margin-top: 60px;
+        margin-left: -170px;
+    }
+    .mai11{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .Ver-Productos{
+        margin-left: 40px;
+        width: 90%;
+    }
+    .btn-pago1, .btn-pago2{
+        height: 40px;
+    }
+    .btn-pago1 img{
+        width: 25px;
+    }
+    .btn-pago2 img{
+        width: 25px;
+    }
+    .titulo h2{
+        font-size: 14px;
+        gap: 20px;
+    }
+    .line{
+        width: 0;
+    }
+    .ver a{
+        font-size: 12px;
+    }
+    .ver{
+        gap: 2px;
+    }
+
+    .targetas-dulc{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+    }
+
+    .line1{
+        width: 170px;
+    }
+
+    .targetas-regalo{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+    }
+
+
+
+
+
+
+
+    /*Footer de android*/
+    .foot{
+        padding: 0 40px;
+        margin-left: -80px;    
+    }
+    .foot img{
+        width: 80px;
+        margin-left: -10px;
+    }
+    .ico p, .foot p, .Tiendas p, .canales p{
+        font-size: 10px;
+    }
+    .ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .Tiendas{
+        margin-left: 20px;
+        width: 120px;
+    }
+    .Tiendas img{
+        width: 30px;
+    }
+    .ico img{
+        width: 30px;    
+        height: 30px;
+        margin-left: -14px;
+    }
+    .url_quien_som img{
+        width: 20px;
+        height: 20px;
+    }
+    .url_quien_som{
+        width: 120px;
+        margin-left: -15px;
+    }.footer_links{
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-size: 10px;
+        }
+    }
 }
