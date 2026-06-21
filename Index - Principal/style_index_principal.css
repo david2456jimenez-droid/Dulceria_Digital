@@ -120,6 +120,10 @@ main{
     bottom: 42%;
     left: 10%;
 }
+.btn_prefer a{
+    text-decoration: none;
+    color: black;
+}
 .btn_prefer:hover{
     width: 400px;
     height: 78px;
@@ -297,40 +301,37 @@ main{
 }
 /*Targetas de productos*/
 .productos{ /*contenedor de los productos*/
-    margin-top: 2%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #FFF8F2;
-    .filas{
-        display: flex;
-        justify-content: center;
-        padding: 0 80px;
-        align-items: center;
-        gap: 150px;
-    }
-    li{
-        margin-top: 38px; /*Nombre y precio*/
-        margin-left: 20px;
-        text-align: left;
-    }
-    .ros{ /*Precio*/
-        color: #D4537E;
-        font-size: 32px;
-        font-weight: 500;
-    }
+    justify-self: center;
+    gap: 200px;
+}
+
+.ros{ /*Precio*/
+    color: #D4537E;
+    font-size: 32px;
+    font-weight: 500;
 }
 .dulces{ /*Targeta*/
-    margin-top: 85px;
-    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 24px;
     background-color: #FFFFFF;
     border: 2px solid #F4C0D1;
-    width:  400px;
-    max-width: 400px;
-    min-width: 0;
-    height: 472px;
+    width: 100%;
+    height: 422px;
     border-radius: 10px;
     font-weight: 500;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
+}
+.dulces img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 .boton_agr{ /*Botones de agregar al carrito*/
@@ -351,15 +352,6 @@ main{
     background-color: #f39696;
     color: black;
     font-weight: 500;
-}
-
-.dulces img {
-    max-width: 100%; /*La imagen nunca podra ser mas acha que su targeta*/
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    object-fit: contain;
 }
 
 /*Videos Promocionales*/
@@ -391,19 +383,25 @@ main{
     width: 100%;
 }
 .video_prod{
-    display: flex;
-    justify-content: center;
-    gap: 38px;
-    margin-top: 40px;
-}
-
-.watch1{
-    filter: brightness(0.6);
-}
-
-.watch1 img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 120px;
     margin-top: 50px;
-    justify-content: center;
+}
+
+.vid-prom, 
+.play{
+    grid-area: 1/1;
+}
+.play{
+    cursor: pointer;
+}
+
+.watch1 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 /*Footer de la pagina*/
@@ -585,8 +583,8 @@ footer p{
     .Ranking_text{
         font-size: 15px;
     }
-    /*Productos estrellas*/
 
+    /*Productos estrellas*/
     .ranking_mast{
         justify-content: space-between;
         padding: 0 20px;
@@ -614,7 +612,6 @@ footer p{
         width: 85px;
         height: 85px;
     }
-
     .ver_todos{
         margin-top: 20px;
     }
@@ -637,6 +634,20 @@ footer p{
     .camino1, .camino2, .camino3{
         width: 20%;
     }
+    .productos{
+        gap: 40px;
+    }
+    .dulces{
+        width: 200px;
+        height: 300px;
+        font-size: 17px;
+    }
+    .ros{
+        font-size: 20px;
+    }
+    .dulces img{
+        height: 120px;
+    }
 
     .filtrado{
         justify-content: center;
@@ -644,29 +655,12 @@ footer p{
         width: 100%;    
         gap: 150px;
     }
-    .productos{
-        .filas{
-            flex-direction: column;
-            gap: 30px;
-        }
-    }
     .videos_text{
         font-size: 10px;
         text-align: left;
-        .line {
-            position: fixed;
-        }
     }
     .fond{
         width: 95%;
-    }   
-    .watch1{
-        margin-top: -45px;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 140%;
-        }
     }
     footer p{
         font-size: 15px;
@@ -827,6 +821,7 @@ footer p{
         height: 30px;
         font-size: 12px;
     }
+    .productos
     .dulces{
         flex-wrap: wrap;
         width: 260px;

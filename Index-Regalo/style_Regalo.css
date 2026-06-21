@@ -106,28 +106,28 @@ main{
 }
 /*Banner de regalos*/
 .banner_regalos{
-    background-color: #EFCAD0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 56px;
-    text-align: center;
-    justify-content: center;
 }
-.banner {
-    width: 960px;
+.banner_img img{
+    width: 100%;
 }
 .letras_ban{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10%;
-    margin-left: 90px;
     width: 650px;
+    font-size: 32px;
 }
 
 .Animacion_banner{
     display: flex;
+    flex-direction: column;
+    background-color: #EFCAD0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 150px;
+    justify-content: center;
+
 }
 
 .Animacion_banner :hover{
@@ -138,11 +138,10 @@ main{
     .boton_banner{
         color: white;
     }
-    .boton_banner img{
+}
+.boton_banner img:hover{
         transform: rotate(-11.86deg); /*ayuda a la rotacion de la imagen -11deg ratocion de 11 grados derecha y 11 positivo viceversa*/
     }
-}
-
 .boton_banner{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -160,7 +159,6 @@ main{
 }
 
 /*Ranking de productos*/
-
 .text_rank{
     display: flex;
     justify-content: center;
@@ -188,7 +186,6 @@ main{
 }
 
 /*Targetas de ranking*/
-
 .prod_rank{
     display: flex;
     flex-direction: column;
@@ -196,16 +193,34 @@ main{
     margin-left: 2%;
     margin-top: 24px;
 }
+.cantidad{font-size: 24px; font-weight: 600;}
 
 .targeta_prod{
     display: grid;
-    grid-template-columns: 1fr 12fr 100fr 3fr;
+    grid-template-columns: 1fr 12fr 100fr 5fr;
     background-color: #FFDCD5;
     align-items: center;
     width: 1845px;
     height: 170px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.barra_rank p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.barra_rank{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.carrito a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #24000C;
+}
+.top{
+    margin-top: -105px;
 }
 
 /*Trgeta Ranking 1*/
@@ -233,9 +248,6 @@ main{
         height: 10px;
         border-radius: 0 10px 10px 0;
 }
-.top{
-    margin-top: -57px;
-}
 
 /*Targeta Ranking 3*/
 
@@ -258,12 +270,18 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 10%;
+    margin-top: 20px;
 }
 .filtro {
-    position: relative;
+    display: grid;
     width: 180px;
     height: 180px;
 }
+.filtro img,
+.filtro a{ 
+    grid-area: 1/1; /*Indica la posicion entre lineas*/
+}
+
 .filtro img{
     width: 100%;
     height: 100%;
@@ -271,13 +289,9 @@ main{
     object-fit: cover;
 }
 .filtro a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 24px;
-    width: 75px;
-    left: 56px;
-    align-items: center;
+    font-size: 24px; 
+    justify-self: center; /*Controla la pocison horizontal dentro de el contenedor (la img)*/
+    align-self: center; /*Controla la pocison vertical dentro de el contenedor (la img)*/
     text-align: center;
     text-decoration: none;
     color: white;
@@ -285,27 +299,19 @@ main{
     
 }
 
-.carrito a{
-    margin-top: 20px;
-    text-decoration: none;
-    color: #24000C;
-}
-
 /*Targetas de productos*/
-
 .targeta_productos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 135px;
-    margin-top: 156px;
-    margin-left: 135px;
+    gap: 130px;
+    margin-top: 50PX;
+    margin-left: 125px;
 }
 
 .regalos-prod img{
-    max-width: 100%; /*No deja que la imagen sea mas grade que su targeta*/
-    height: auto; /*mantiene el tamaños original de la imagen*/
-    display: block; /*convierte la imagen en un elemento de bloque*/
-    margin: 0 auto; /*Centra horixontalmente la imagen*/
+    width: 100%; /*No deja que la imagen sea mas grade que su targeta*/
+    height: 150px; /*mantiene el tamaños original de la imagen*/
+    display: block; /*convierte la imagen en un elemento de bloque*/ /*Centra horixontalmente la imagen*/
     margin-top: 20px; 
     object-fit: contain; /*Hace que la imgen completa se vea dentro de la targeta*/
 }
@@ -319,17 +325,19 @@ main{
     border: 2px solid #F4C0D1;
     border-radius: 20px;
     font-size: 24px;
-    width: 400px;
+    width: 90%;
     height: 472px;
 }
 .continuara_{
     background-color: #FFF8F2;
     border-radius: 20px;
-    h4{
+    height: 472px;
+}
+
+.continuara_ h4{
         font-size: 32px;
         margin-left: 90px;
     }
-}
 
 .regalos-prod p, .precio{
     margin-left: 15px;
@@ -344,7 +352,7 @@ main{
 .botones{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 45px;
 }
 .agr_canasta{
     background-color: #3F2537;
@@ -367,6 +375,11 @@ main{
     background-color: #FFFFFF;
 }
 
+.visuali_canasta{
+    display: flex;
+    align-items: center;
+}
+
 .canasta_text{
     display: flex;
     justify-content: space-between;
@@ -382,7 +395,7 @@ main{
 .linea-canat{
     background-color: #DFCAB6;
     width: 60%;
-    height:2px;
+    height:3px;
 }
 .ver_canast{
     display: flex;
@@ -573,39 +586,45 @@ footer p{
             top: 50px;
         }
     }
-    .banner_regalos{
-        font-size: 20px;
-    }
-    .banner{
-        width: 355px;
-        margin-left: -130px;
-    }
-    .boton_banner{
-        width: 300px;
-        height: 90px;
-        border-radius: 21px;
-    }
-    .boton_banner a{
-        font-size: 24px;
-    }
-    .boton_banner img{
-        width: 90%;
-    }
+
+    /*Banner de la pagina regalos*/
     .banner_regalos{
         display: grid;
-        grid-template-columns: 1fr 10fr;
-        width: 570px;
-        
+        grid-template-columns: 1fr 1fr;
     }
-    .letras_ban h2{
+    .banner_img img{
+        width: 368px;
+    }
+    .Animacion_banner{
+        width: 400px;
+        height: 372px;
+        gap: 50px;
+    }
+    .letras_ban{
+        width: 220px;
         font-size: 20px;
     }
+    .boton_banner{
+        justify-content: center;
+        width: 200px;
+        height: 60px;
+        border-radius: 10px;
+
+    }
+    .boton_banner a{
+        font-size: 20px;
+    }
+    .boton_banner img{
+        width: 100%;
+    }
+
+    /*seccion de ranking de productos*/
     .text_rank{
         font-size: 24px;
         font-weight: 500;
         height: 90px;
     }
-
+    
     .ver_todos{
         margin-left: 80%;
     }
@@ -618,8 +637,14 @@ footer p{
 
     /*Targetas de ranking*/
     .targeta_prod{
-        width: 760px;
+        display: grid;
+        grid-template-columns: 1fr 12fr 100fr 15fr;
+        width: 740px;
         height: 100px;
+    }
+    .cantidad{
+        font-size: 20px;
+        font-weight: 540;
     }
 
     /*Targeta ranking*/
@@ -648,20 +673,31 @@ footer p{
     }
     .top{
         width: 50px;
+        margin-top: -60px;
     }
     .filtro{
+        display: grid;
         width: 80px;
         height: 80px;
     }
+    .filtro img,
     .filtro a{
-        font-size: 10px;
-        font-weight: 200;
-        margin-left: -50px;
-        margin-top: -5px;
+        grid-area: 1/1;
     }
+    .filtro a{
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .filtro img{
+        width: 110px;
+    }
+
+    /*Productos de la seccion regalo*/
     .targeta_productos{
-        margin-top: 2px;
-        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin-left: 30px;
     }
     .regalos-prod{
         width: 200px;
@@ -671,20 +707,22 @@ footer p{
         }
     }
     .regalos-prod img{
-        width: 30%;
+        width: 100%;
+        height: 70px;
+        object-fit: contain;
     }
     .regalos-prod{
-        margin-left: 1%;
+        border-radius: 10px;
     }
-    .agr_canasta{
-        font-size: 10px;
-        width: 120px;
-        height: 40px;
+    .botones{
+        gap: 20px;
     }
+    .agr_canasta,
     .añad_carrito{
         font-size: 10px;
-        width: 120px;
+        width: 80px;
         height: 40px;
+        border-radius: 7px;
     }
     .continuara_{
         text-align: center;
@@ -694,11 +732,12 @@ footer p{
             font-size: 19px;
             margin-left: 1px;
         }
-        
     }
     .continuara_ img{
-        margin-left: 70px;
+        height: 170px;
     }
+
+    /*Video de las*/
     .canasta_text h2{
         font-size: 15px;
     }
@@ -709,12 +748,15 @@ footer p{
         width: 20%;
     }
     .linea-canat{
-        width: 20%;
+        width: 50%;
+    }
+    .video-cans{
+        margin-top: -70px;
     }
 
     /*Footer*/
     .foot {
-        p{
+        p{  
             font-size: 15px;
         }
         img{
@@ -764,7 +806,7 @@ footer p{
     }
 
     .cabezera{
-        width: 375px;
+        width: 100%;
         height: 100px;
         padding: 0 20px;
     }
@@ -784,25 +826,32 @@ footer p{
         margin-top: -22px;
         height: 125px;
     }
-    .banner{
-        margin-left: -195px;
+
+    /*Banner de regalos*/
+    .Animacion_banner{
+        height: 200px;
         width: 220px;
-        height: 260px;
-    }
-    .boton_banner{
-        width: 120px;
-        height: 50px;
-        border-radius: 10px;
-        a{
-            font-size: 10px;
-        }
-        
-    }
-    .letras_ban h2{
-        font-size: 10px;
+        gap: 20px;
     }
     .letras_ban{
-        margin-left: -220px;
+        font-size: 15px;
+    }
+    .boton_banner{
+        width: 160px;
+        height: 50px;
+    }
+    .boton_banner a{
+        font-size: 12px;
+    }
+    .banner_img img{
+        width: 100%;
+        height: 200px;
+    }
+
+    /*Seccion de Ranking*/
+    .targeta_prod{
+        display: grid;
+        grid-template-columns: 1fr 12fr 100fr 25fr;
     }
     .text_rank{
         font-size: 15px;
@@ -814,52 +863,130 @@ footer p{
         }
     }
     .targeta_prod{
-        width: 375px;
+        width: 98%;
     }
     .barra1{
-        width: 100%;
+        width: 190px;
     }
+
     .barra2_0{
-        width: 182px;
+        width: 70%;
     }
     .barra2_1{
-        width: 40px;
+        width: 20%;
     }
     .barra3_0{
-        width: 150px;
+        width: 60%;
     }
     .barra3_1{
-        width: 100px;
+        width: 30%;
     }
+    .cantidad{
+        font-size: 15px;
+        font-weight: 540;
+    }
+    .barra_rank{
+        gap: 10px;
+    }
+    .barra_rank p{
+        font-size: 15px;
+    }
+    .carrito a{
+        font-size: 12px;
+    }
+    .carrito img{
+        width: 15px;
+    }
+    /*Filtro de la seccion productos*/
     .filtros_DiaEspecial{
-        margin-left: 22px;
-        gap: 1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-left: 7px;
+        margin-top: -30px;
         img{
-            width: 60px;
-            height: 60px;
+            width: 90px;
+            height: 90px;
         }
     }
+    .filtro{
+        margin-top: 16px;
+    }
+    .filtro a{
+        font-size: 15px;
+    }
+    /*Tragetas de productos*/
     .targeta_productos{
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-left: 80px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-left: 10px;
+    }
+    .agr_canasta, .añad_carrito{
+        border-radius: 6px;
+        width: 70px;
+    }
+    .botones{
+        gap: 8px;
+    }
+    .regalos-prod p{
+        font-size: 15px;
     }
     .regalos-prod{
         margin-top: 20px;
+        width: 160px;
+        height: 200px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    .term {
+        img{
+            width: 10%;
+        }
+    }
+    .continuara_{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 200px;
+        
+    }
+    .continuara_ img{
+        width: 110px;
+        margin-top: -56px;
+    }
+    .continuara_ h4{ 
+        font-size: 15px;
+        margin-top: -45px;
+    }
+    /*Video de la canatas*/
+    
+    .canasta_text h2{
+        font-size: 10px;
+    }
+    .linea-canat{
+        width: 0;
+    }
+    .ver_canast{
+        display: flex;
+        gap: 5px;
+    }
+    .ver_canast a{
+        font-size: 10px;
+    }
+    .img_canast img{
+        width: 10px;
+    }
+    .flecha{
+        width: 10px;
+    }
+    .flecha_cans{
+        width: 8%;
+        height: 30px;
+    }
+    .video-cans{
+        margin-top: -70px;
+    }
     /*Footer de android*/
     .naveg_page a{
         font-size: 10px;

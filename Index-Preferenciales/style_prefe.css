@@ -398,6 +398,9 @@ footer p{
     .texto_ofert h2{
         font-size: 24px;
     }
+    .banner_prefe{
+        width: 100%;
+    }
     .parraf_ofert{
         font-size: 18px;
     }
